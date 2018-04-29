@@ -1,0 +1,917 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_ltkywEvpEeiDYNBtoVGnnA" name="callCenterApp2">
+    <eAnnotations xmi:id="_m0180EvpEeiDYNBtoVGnnA" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_m0180UvpEeiDYNBtoVGnnA" source="codegen">
+        <details xmi:id="_m0180kvpEeiDYNBtoVGnnA" key="codegenDirectory" value="/callCenterApp/src/main/java"/>
+        <details xmi:id="_pIgokEvpEeiDYNBtoVGnnA" key="AssociatedSourceCode" value="/callCenterApp/src/main/java/callcenter/com/co/app/App.java;1894767913/1;/callCenterApp/src/main/java/callcenter/com/co/app/abstracts/Agent.java;3993645470/1;/callCenterApp/src/main/java/callcenter/com/co/app/abstracts/Call.java;3876776795/1;/callCenterApp/src/main/java/callcenter/com/co/app/abstracts/Person.java;1784242717/1;/callCenterApp/src/main/java/callcenter/com/co/app/configuration/Config.java;3743404630/1;/callCenterApp/src/main/java/callcenter/com/co/app/entities/receivers/Supervisor.java;2699815123/1;/callCenterApp/src/main/java/callcenter/com/co/app/entities/calls/IncomingCall.java;1692267845/1;/callCenterApp/src/main/java/callcenter/com/co/app/entities/receivers/AgentQueue.java;3616106609/1;/callCenterApp/src/main/java/callcenter/com/co/app/entities/receivers/Director.java;2638115226/1;/callCenterApp/src/main/java/callcenter/com/co/app/entities/receivers/Operator.java;314774730/1;/callCenterApp/src/main/java/callcenter/com/co/app/dispatcher/Dispatcher.java;52437210/1;/callCenterApp/src/main/java/callcenter/com/co/app/entities/senders/Caller.java;197402231/1;/callCenterApp/src/main/java/callcenter/com/co/app/interfaces/Receiver.java;4247261879/1;/callCenterApp/src/main/java/callcenter/com/co/app/interfaces/Sender.java;830644791/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_nyTDkEvpEeiDYNBtoVGnnA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_nyZxQEvpEeiDYNBtoVGnnA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_nyaYUEvpEeiDYNBtoVGnnA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_nya_YEvpEeiDYNBtoVGnnA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_nybmcEvpEeiDYNBtoVGnnA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_nycNgEvpEeiDYNBtoVGnnA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_nyc0kEvpEeiDYNBtoVGnnA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_nydboEvpEeiDYNBtoVGnnA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_nynzsEvpEeiDYNBtoVGnnA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_nqP60EvpEeiDYNBtoVGnnA" name="callcenter">
+      <packagedElement xmi:type="uml:Package" xmi:id="_nqQh4EvpEeiDYNBtoVGnnA" name="com">
+        <packagedElement xmi:type="uml:Package" xmi:id="_nqS-IEvpEeiDYNBtoVGnnA" name="co">
+          <packagedElement xmi:type="uml:Package" xmi:id="_nqi1wEvpEeiDYNBtoVGnnA" name="app">
+            <packagedElement xmi:type="uml:Package" xmi:id="_nqkq8EvpEeiDYNBtoVGnnA" name="configuration">
+              <packagedElement xmi:type="uml:Class" xmi:id="_n4XPUEvpEeiDYNBtoVGnnA" name="Config">
+                <ownedAttribute xmi:id="_oivCAEvpEeiDYNBtoVGnnA" name="nThreads" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_oiw3MEvpEeiDYNBtoVGnnA" value="0"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_oiz6gEvpEeiDYNBtoVGnnA" name="nOperators" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_oi1IoEvpEeiDYNBtoVGnnA" value="0"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_oi4L8EvpEeiDYNBtoVGnnA" name="nSupervisor" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_oi4zAEvpEeiDYNBtoVGnnA" value="0"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_oi9EcEvpEeiDYNBtoVGnnA" name="nDirectors" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_oi-SkEvpEeiDYNBtoVGnnA" value="0"/>
+                </ownedAttribute>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_okkOAEvpEeiDYNBtoVGnnA" name="getnThreads" specification="_n4zUMEvpEeiDYNBtoVGnnA">
+                  <ownedParameter xmi:id="_okkOAUvpEeiDYNBtoVGnnA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>return nThreads;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_okk1EEvpEeiDYNBtoVGnnA" name="setnThreads" specification="_n5FBAEvpEeiDYNBtoVGnnA">
+                  <ownedParameter xmi:id="_oklcIEvpEeiDYNBtoVGnnA" name="nThreads">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>this.nThreads = nThreads;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_okmDMEvpEeiDYNBtoVGnnA" name="getnOperators" specification="_n5J5gEvpEeiDYNBtoVGnnA">
+                  <ownedParameter xmi:id="_okmDMUvpEeiDYNBtoVGnnA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>return nOperators;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oknRUEvpEeiDYNBtoVGnnA" name="setnOperators" specification="_n5U4oEvpEeiDYNBtoVGnnA">
+                  <ownedParameter xmi:id="_oknRUUvpEeiDYNBtoVGnnA" name="nOperators">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>this.nOperators = nOperators;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_okn4YEvpEeiDYNBtoVGnnA" name="getnSupervisor" specification="_n5ge0EvpEeiDYNBtoVGnnA">
+                  <ownedParameter xmi:id="_okn4YUvpEeiDYNBtoVGnnA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>return nSupervisor;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_okpGgEvpEeiDYNBtoVGnnA" name="setnSupervisor" specification="_n5l-YEvpEeiDYNBtoVGnnA">
+                  <ownedParameter xmi:id="_okpGgUvpEeiDYNBtoVGnnA" name="nSupervisor">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>this.nSupervisor = nSupervisor;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_okptkEvpEeiDYNBtoVGnnA" name="getnDirectors" specification="_n5pBsEvpEeiDYNBtoVGnnA">
+                  <ownedParameter xmi:id="_okptkUvpEeiDYNBtoVGnnA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>return nDirectors;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_okq7sEvpEeiDYNBtoVGnnA" name="setnDirectors" specification="_n5vvYEvpEeiDYNBtoVGnnA">
+                  <ownedParameter xmi:id="_okq7sUvpEeiDYNBtoVGnnA" name="nDirectors">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>this.nDirectors = nDirectors;
+	</body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_n4zUMEvpEeiDYNBtoVGnnA" name="getnThreads" method="_okkOAEvpEeiDYNBtoVGnnA">
+                  <ownedParameter xmi:id="_n45a0EvpEeiDYNBtoVGnnA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_n5FBAEvpEeiDYNBtoVGnnA" name="setnThreads" method="_okk1EEvpEeiDYNBtoVGnnA">
+                  <ownedParameter xmi:id="_n5GPIEvpEeiDYNBtoVGnnA" name="nThreads">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_n5J5gEvpEeiDYNBtoVGnnA" name="getnOperators" method="_okmDMEvpEeiDYNBtoVGnnA">
+                  <ownedParameter xmi:id="_n5ScYEvpEeiDYNBtoVGnnA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_n5U4oEvpEeiDYNBtoVGnnA" name="setnOperators" method="_oknRUEvpEeiDYNBtoVGnnA">
+                  <ownedParameter xmi:id="_n5WGwEvpEeiDYNBtoVGnnA" name="nOperators">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_n5ge0EvpEeiDYNBtoVGnnA" name="getnSupervisor" method="_okn4YEvpEeiDYNBtoVGnnA">
+                  <ownedParameter xmi:id="_n5iUAEvpEeiDYNBtoVGnnA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_n5l-YEvpEeiDYNBtoVGnnA" name="setnSupervisor" method="_okpGgEvpEeiDYNBtoVGnnA">
+                  <ownedParameter xmi:id="_n5mlcEvpEeiDYNBtoVGnnA" name="nSupervisor">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_n5pBsEvpEeiDYNBtoVGnnA" name="getnDirectors" method="_okptkEvpEeiDYNBtoVGnnA">
+                  <ownedParameter xmi:id="_n5q24EvpEeiDYNBtoVGnnA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_n5vvYEvpEeiDYNBtoVGnnA" name="setnDirectors" method="_okq7sEvpEeiDYNBtoVGnnA">
+                  <ownedParameter xmi:id="_n5wWcEvpEeiDYNBtoVGnnA" name="nDirectors">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                </ownedOperation>
+              </packagedElement>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_nqmgIEvpEeiDYNBtoVGnnA" name="dispatcher">
+              <packagedElement xmi:type="uml:Class" xmi:id="_n9AewEvpEeiDYNBtoVGnnA" name="Dispatcher">
+                <ownedComment xmi:id="_olHnoEvpEeiDYNBtoVGnnA">
+                  <body> This dispatcher managers all concurrent request of the dispatchCall
+ *
+ *</body>
+                </ownedComment>
+                <ownedAttribute xmi:id="_oj-_MEvpEeiDYNBtoVGnnA" name="executor" type="_odri4EvpEeiDYNBtoVGnnA" isReadOnly="true" association="_ompRoEvpEeiDYNBtoVGnnA"/>
+                <ownedAttribute xmi:id="_okANUEvpEeiDYNBtoVGnnA" name="receivers" type="_nyFoMEvpEeiDYNBtoVGnnA" isOrdered="true" isReadOnly="true" association="_oms8AEvpEeiDYNBtoVGnnA">
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_okA0YEvpEeiDYNBtoVGnnA" value="*"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_okCCgEvpEeiDYNBtoVGnnA" name="queueCallers" visibility="private" type="_oc4RoEvpEeiDYNBtoVGnnA" association="_om2tAUvpEeiDYNBtoVGnnA"/>
+                <ownedAttribute xmi:id="_okLMcEvpEeiDYNBtoVGnnA" name="lock" visibility="private" type="_od9PsEvpEeiDYNBtoVGnnA" association="_om6-cUvpEeiDYNBtoVGnnA"/>
+                <ownedAttribute xmi:id="_okOPwEvpEeiDYNBtoVGnnA" name="running" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedAttribute>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ok3wAEvpEeiDYNBtoVGnnA" name="Dispatcher" specification="_oeR_0EvpEeiDYNBtoVGnnA">
+                  <ownedParameter xmi:id="_ok4XEEvpEeiDYNBtoVGnnA" name="config" type="_n4XPUEvpEeiDYNBtoVGnnA"/>
+                  <ownedParameter xmi:id="_ok4XEUvpEeiDYNBtoVGnnA" type="_n9AewEvpEeiDYNBtoVGnnA" direction="return"/>
+                  <language>java</language>
+                  <body>executor = Executors.newFixedThreadPool(config.getnThreads());
+
+		this.queueCallers = new ConcurrentLinkedQueue&lt;Sender>();
+		this.lock = new ReentrantLock();
+		this.running = false;
+
+		List&lt;Agent> receiverList = new ArrayList&lt;Agent>();
+		
+		IntStream.rangeClosed(1, config.getnOperators()).forEach(i -> {
+			receiverList.add(new Operator(&quot;_&quot; + i));
+     });
+		
+     IntStream.rangeClosed(1, config.getnSupervisor()).forEach(i -> {
+     	receiverList.add(new Supervisor(&quot;_&quot; + i));
+     });
+
+     IntStream.rangeClosed(1, config.getnDirectors()).forEach(i -> {
+     	receiverList.add(new Director(&quot;_&quot; + i));
+		});
+             
+     receivers = Collections.synchronizedList(receiverList);
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ok4-IEvpEeiDYNBtoVGnnA" name="dispatchCall" specification="_oecX4EvpEeiDYNBtoVGnnA">
+                  <ownedParameter xmi:id="_ok4-IUvpEeiDYNBtoVGnnA" name="caller" type="_oBJX4EvpEeiDYNBtoVGnnA"/>
+                  <language>java</language>
+                  <body>queueCallers.offer(caller);
+
+		if (!running ) {
+			loopCallCenter();
+		}
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ok5lMEvpEeiDYNBtoVGnnA" name="loopCallCenter" specification="_n96dsEvpEeiDYNBtoVGnnA">
+                  <language>java</language>
+                  <body>lock.lock();
+		try {
+     //  callCenter loop
+		 while (! queueCallers.isEmpty()) {
+
+				Sender caller = queueCallers.poll();
+
+				//Get all receivers are not busy
+				List&lt;Agent> idleReceivers =
+						      Collections
+						       .synchronizedList(receivers.stream()
+						       .filter(Agent.isBusy.negate())
+						       .collect(Collectors.toList()));
+
+				Agent assignedAgent =
+						idleReceivers.stream()
+						.filter(Operator.isOneOperator)
+						   .findFirst()
+						   .orElse(idleReceivers.stream()
+								.filter(Supervisor.isOneSupervisor)
+								.findFirst()
+					            .orElse(idleReceivers.stream()
+					            	.filter(Director.isOneDirector)
+					            	.findFirst()
+										// the AgentQueue on line a caller
+					               .orElse(new AgentQueue(queueCallers))))
+
+					   .setBusy(true); // From this moment the agent is busy
+
+			    // Create a thread (CallUp) and send the executorPool
+				executor.execute(assignedAgent.answer((Caller) caller));
+
+
+		   }
+
+		} finally {
+			// The process has finished
+			this.running = ! queueCallers.isEmpty();
+			lock.unlock();
+		}
+	</body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_n96dsEvpEeiDYNBtoVGnnA" name="loopCallCenter" visibility="private" method="_ok5lMEvpEeiDYNBtoVGnnA">
+                  <ownedComment xmi:id="_olIOsUvpEeiDYNBtoVGnnA">
+                    <body> This method has a loop that gets a caller from queue and assigns an agent in order to
+	 *  attend this caller. Steps:
+	 *  1. Lock code block
+	 *  2. The process gets a caller from queue.
+	 *  3. Get a idle receivers list, in order to get all receivers are not busy in
+	 *     that instance.
+	 *  4. Try to get an operator agent, if there is not an operator then try to get
+	 *     a supervisor agent, if there is not a supervisor then try to get a director agent,
+	 *     else put on queue through of the AgentQueue.
+	 *  5. Unlock the code block</body>
+                  </ownedComment>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oeR_0EvpEeiDYNBtoVGnnA" name="Dispatcher" method="_ok3wAEvpEeiDYNBtoVGnnA">
+                  <eAnnotations xmi:id="_oeaisEvpEeiDYNBtoVGnnA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                    <details xmi:id="_oeaisUvpEeiDYNBtoVGnnA" key="create"/>
+                  </eAnnotations>
+                  <ownedComment xmi:id="_olHnoUvpEeiDYNBtoVGnnA">
+                    <body> In this constructor all variables are initialized
+	 *
+	 * @param config</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_oeR_0UvpEeiDYNBtoVGnnA" name="config" type="_n4XPUEvpEeiDYNBtoVGnnA"/>
+                  <ownedParameter xmi:id="_oebJwEvpEeiDYNBtoVGnnA" type="_n9AewEvpEeiDYNBtoVGnnA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oecX4EvpEeiDYNBtoVGnnA" name="dispatchCall" method="_ok4-IEvpEeiDYNBtoVGnnA">
+                  <ownedComment xmi:id="_olIOsEvpEeiDYNBtoVGnnA">
+                    <body>Get all request an on queue them.
+	 *
+	 * This method places a caller on the concurrent queue and if the process is not running then
+	 * invokes the loopCallCenter method in order to start the process
+	 * @param caller This is a Caller object</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_oec-8EvpEeiDYNBtoVGnnA" name="caller" type="_oBJX4EvpEeiDYNBtoVGnnA"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_ompRoEvpEeiDYNBtoVGnnA" name="" memberEnd="_ompRoUvpEeiDYNBtoVGnnA _oj-_MEvpEeiDYNBtoVGnnA">
+                <ownedEnd xmi:id="_ompRoUvpEeiDYNBtoVGnnA" name="" type="_n9AewEvpEeiDYNBtoVGnnA" association="_ompRoEvpEeiDYNBtoVGnnA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_oms8AEvpEeiDYNBtoVGnnA" name="" memberEnd="_oms8AUvpEeiDYNBtoVGnnA _okANUEvpEeiDYNBtoVGnnA">
+                <ownedEnd xmi:id="_oms8AUvpEeiDYNBtoVGnnA" name="" type="_n9AewEvpEeiDYNBtoVGnnA" association="_oms8AEvpEeiDYNBtoVGnnA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_om2tAUvpEeiDYNBtoVGnnA" name="" memberEnd="_om3UEEvpEeiDYNBtoVGnnA _okCCgEvpEeiDYNBtoVGnnA">
+                <ownedEnd xmi:id="_om3UEEvpEeiDYNBtoVGnnA" name="" type="_n9AewEvpEeiDYNBtoVGnnA" association="_om2tAUvpEeiDYNBtoVGnnA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_om6-cUvpEeiDYNBtoVGnnA" name="" memberEnd="_om7lgEvpEeiDYNBtoVGnnA _okLMcEvpEeiDYNBtoVGnnA">
+                <ownedEnd xmi:id="_om7lgEvpEeiDYNBtoVGnnA" name="" type="_n9AewEvpEeiDYNBtoVGnnA" association="_om6-cUvpEeiDYNBtoVGnnA"/>
+              </packagedElement>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_nqqxkEvpEeiDYNBtoVGnnA" name="entities">
+              <packagedElement xmi:type="uml:Package" xmi:id="_nqrYoEvpEeiDYNBtoVGnnA" name="senders">
+                <packagedElement xmi:type="uml:Class" xmi:id="_n-yncEvpEeiDYNBtoVGnnA" name="Caller">
+                  <generalization xmi:id="_oe1ZcEvpEeiDYNBtoVGnnA" general="_n252wEvpEeiDYNBtoVGnnA"/>
+                  <ownedAttribute xmi:id="_okTvUEvpEeiDYNBtoVGnnA" name="attended">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                    <defaultValue xmi:type="uml:LiteralString" xmi:id="_okUWYEvpEeiDYNBtoVGnnA" value="false"/>
+                  </ownedAttribute>
+                  <interfaceRealization xmi:id="_oes2kEvpEeiDYNBtoVGnnA" client="_n-yncEvpEeiDYNBtoVGnnA" supplier="_oBJX4EvpEeiDYNBtoVGnnA" contract="_oBJX4EvpEeiDYNBtoVGnnA"/>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ok7aYEvpEeiDYNBtoVGnnA" name="Caller" specification="_n_GJcEvpEeiDYNBtoVGnnA">
+                    <ownedParameter xmi:id="_ok7aYUvpEeiDYNBtoVGnnA" name="name">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_ok7aYkvpEeiDYNBtoVGnnA" type="_n-yncEvpEeiDYNBtoVGnnA" direction="return"/>
+                    <language>java</language>
+                    <body>super.name = name;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ok9PkEvpEeiDYNBtoVGnnA" name="isAttended" specification="_n_SWsEvpEeiDYNBtoVGnnA">
+                    <ownedParameter xmi:id="_ok9PkUvpEeiDYNBtoVGnnA" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                    </ownedParameter>
+                    <language>java</language>
+                    <body>return false;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ok_r0EvpEeiDYNBtoVGnnA" name="setAttended" specification="_n_gZIEvpEeiDYNBtoVGnnA">
+                    <ownedParameter xmi:id="_ok_r0UvpEeiDYNBtoVGnnA" name="attended">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                    </ownedParameter>
+                    <language>java</language>
+                    <body>this.attended = attended;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_olA58EvpEeiDYNBtoVGnnA" name="toString" specification="_n_7P4EvpEeiDYNBtoVGnnA">
+                    <ownedParameter xmi:id="_olA58UvpEeiDYNBtoVGnnA" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <language>java</language>
+                    <body>return &quot;Caller [ name &quot;+name+&quot;, attended=&quot; + attended +&quot;]&quot;;
+	</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:id="_n_GJcEvpEeiDYNBtoVGnnA" name="Caller" method="_ok7aYEvpEeiDYNBtoVGnnA">
+                    <eAnnotations xmi:id="_n_OsUEvpEeiDYNBtoVGnnA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                      <details xmi:id="_n_PTYEvpEeiDYNBtoVGnnA" key="create"/>
+                    </eAnnotations>
+                    <ownedParameter xmi:id="_n_GwgEvpEeiDYNBtoVGnnA" name="name">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_n_P6cEvpEeiDYNBtoVGnnA" type="_n-yncEvpEeiDYNBtoVGnnA" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_n_SWsEvpEeiDYNBtoVGnnA" name="isAttended" method="_ok9PkEvpEeiDYNBtoVGnnA">
+                    <ownedParameter xmi:id="_n_Uy8EvpEeiDYNBtoVGnnA" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_n_gZIEvpEeiDYNBtoVGnnA" name="setAttended" method="_ok_r0EvpEeiDYNBtoVGnnA">
+                    <ownedParameter xmi:id="_n_hAMEvpEeiDYNBtoVGnnA" name="attended">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_n_7P4EvpEeiDYNBtoVGnnA" name="toString" method="_olA58EvpEeiDYNBtoVGnnA">
+                    <ownedParameter xmi:id="_n_-6QEvpEeiDYNBtoVGnnA" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                </packagedElement>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_nq-TkEvpEeiDYNBtoVGnnA" name="calls">
+                <packagedElement xmi:type="uml:Class" xmi:id="_n6sKkEvpEeiDYNBtoVGnnA" name="IncomingCall">
+                  <generalization xmi:id="_ocvuwEvpEeiDYNBtoVGnnA" general="_n1_30EvpEeiDYNBtoVGnnA"/>
+                  <ownedAttribute xmi:id="_ojUQ0EvpEeiDYNBtoVGnnA" name="logger" visibility="package" isLeaf="true" isStatic="true" type="_ocEZUEvpEeiDYNBtoVGnnA" isReadOnly="true" association="_omC0sEvpEeiDYNBtoVGnnA">
+                    <defaultValue xmi:type="uml:LiteralString" xmi:id="_ojU34EvpEeiDYNBtoVGnnA" value="LoggerFactory.getLogger(IncomingCall.class)"/>
+                  </ownedAttribute>
+                  <ownedAttribute xmi:id="_ojX7MEvpEeiDYNBtoVGnnA" name="caller" type="_n-yncEvpEeiDYNBtoVGnnA" association="_omHtMEvpEeiDYNBtoVGnnA"/>
+                  <ownedAttribute xmi:id="_ojfP8EvpEeiDYNBtoVGnnA" name="agent" type="_nyFoMEvpEeiDYNBtoVGnnA" association="_omQ3IEvpEeiDYNBtoVGnnA"/>
+                  <ownedAttribute xmi:id="_oji6UEvpEeiDYNBtoVGnnA" name="timeCall">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                    <defaultValue xmi:type="uml:LiteralString" xmi:id="_ojkIcEvpEeiDYNBtoVGnnA" value="getCallTime()"/>
+                  </ownedAttribute>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_okt_AEvpEeiDYNBtoVGnnA" name="IncomingCall" specification="_oceB8EvpEeiDYNBtoVGnnA">
+                    <ownedParameter xmi:id="_okt_AUvpEeiDYNBtoVGnnA" name="agent" type="_nyFoMEvpEeiDYNBtoVGnnA"/>
+                    <ownedParameter xmi:id="_okt_AkvpEeiDYNBtoVGnnA" name="caller" type="_n-yncEvpEeiDYNBtoVGnnA"/>
+                    <ownedParameter xmi:id="_okt_A0vpEeiDYNBtoVGnnA" type="_n6sKkEvpEeiDYNBtoVGnnA" direction="return"/>
+                    <language>java</language>
+                    <body>this.agent = agent;
+		this.caller = caller;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_okvNIEvpEeiDYNBtoVGnnA" name="doCall" specification="_ociTYEvpEeiDYNBtoVGnnA">
+                    <ownedParameter xmi:id="_okvNIUvpEeiDYNBtoVGnnA" name="sender" type="_oBJX4EvpEeiDYNBtoVGnnA"/>
+                    <ownedParameter xmi:id="_okvNIkvpEeiDYNBtoVGnnA" name="receiver" type="_oAgesEvpEeiDYNBtoVGnnA"/>
+                    <language>java</language>
+                    <body>logger.info(&quot;Start {}{} -> {}&quot;,  agent.getClass().getSimpleName() , this.agent.getName(), caller.getName());
+		try {
+			Thread.sleep(timeCall);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+			logger.error(e.getMessage(),e);
+		}
+		logger.info(&quot;--> End {}{} -> {}, totalTime={}&quot;, agent.getClass().getSimpleName() , this.agent.getName(), caller.getName(), timeCall );
+
+
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_okwbQEvpEeiDYNBtoVGnnA" name="run" specification="_n7JdkEvpEeiDYNBtoVGnnA">
+                    <language>java</language>
+                    <body>doCall(this.caller, this.agent);
+	
+		caller.setAttended(true);
+		agent.setBusy(false);
+		
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_okxCUEvpEeiDYNBtoVGnnA" name="toString" specification="_n7W48EvpEeiDYNBtoVGnnA">
+                    <ownedParameter xmi:id="_okxCUUvpEeiDYNBtoVGnnA" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <language>java</language>
+                    <body>return &quot;Call [ agent=&quot; + agent + &quot;, timeCall=&quot; + timeCall + &quot;]&quot;;
+	</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:id="_n7JdkEvpEeiDYNBtoVGnnA" name="run" method="_okwbQEvpEeiDYNBtoVGnnA"/>
+                  <ownedOperation xmi:id="_n7W48EvpEeiDYNBtoVGnnA" name="toString" method="_okxCUEvpEeiDYNBtoVGnnA">
+                    <ownedParameter xmi:id="_n7ZVMEvpEeiDYNBtoVGnnA" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_oceB8EvpEeiDYNBtoVGnnA" name="IncomingCall" method="_okt_AEvpEeiDYNBtoVGnnA">
+                    <eAnnotations xmi:id="_ocf3IEvpEeiDYNBtoVGnnA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                      <details xmi:id="_ocgeMEvpEeiDYNBtoVGnnA" key="create"/>
+                    </eAnnotations>
+                    <ownedParameter xmi:id="_ocepAEvpEeiDYNBtoVGnnA" name="agent" type="_nyFoMEvpEeiDYNBtoVGnnA"/>
+                    <ownedParameter xmi:id="_ocfQEEvpEeiDYNBtoVGnnA" name="caller" type="_n-yncEvpEeiDYNBtoVGnnA"/>
+                    <ownedParameter xmi:id="_ocgeMUvpEeiDYNBtoVGnnA" type="_n6sKkEvpEeiDYNBtoVGnnA" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_ociTYEvpEeiDYNBtoVGnnA" name="doCall" visibility="protected" method="_okvNIEvpEeiDYNBtoVGnnA">
+                    <ownedParameter xmi:id="_oci6cEvpEeiDYNBtoVGnnA" name="sender" type="_oBJX4EvpEeiDYNBtoVGnnA"/>
+                    <ownedParameter xmi:id="_ocjhgEvpEeiDYNBtoVGnnA" name="receiver" type="_oAgesEvpEeiDYNBtoVGnnA"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Association" xmi:id="_omC0sEvpEeiDYNBtoVGnnA" name="" memberEnd="_omC0sUvpEeiDYNBtoVGnnA _ojUQ0EvpEeiDYNBtoVGnnA">
+                  <ownedEnd xmi:id="_omC0sUvpEeiDYNBtoVGnnA" name="" type="_n6sKkEvpEeiDYNBtoVGnnA" association="_omC0sEvpEeiDYNBtoVGnnA"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Association" xmi:id="_omHtMEvpEeiDYNBtoVGnnA" name="" memberEnd="_omHtMUvpEeiDYNBtoVGnnA _ojX7MEvpEeiDYNBtoVGnnA">
+                  <ownedEnd xmi:id="_omHtMUvpEeiDYNBtoVGnnA" name="" type="_n6sKkEvpEeiDYNBtoVGnnA" association="_omHtMEvpEeiDYNBtoVGnnA"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Association" xmi:id="_omQ3IEvpEeiDYNBtoVGnnA" name="" memberEnd="_omQ3IUvpEeiDYNBtoVGnnA _ojfP8EvpEeiDYNBtoVGnnA">
+                  <ownedEnd xmi:id="_omQ3IUvpEeiDYNBtoVGnnA" name="" type="_n6sKkEvpEeiDYNBtoVGnnA" association="_omQ3IEvpEeiDYNBtoVGnnA"/>
+                </packagedElement>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_ntrpUEvpEeiDYNBtoVGnnA" name="receivers">
+                <packagedElement xmi:type="uml:Class" xmi:id="_n6FGkEvpEeiDYNBtoVGnnA" name="Supervisor">
+                  <generalization xmi:id="_ob6oUEvpEeiDYNBtoVGnnA" general="_nyFoMEvpEeiDYNBtoVGnnA"/>
+                  <ownedAttribute xmi:id="_ojB88EvpEeiDYNBtoVGnnA" name="isOneSupervisor" isStatic="true" type="_oaZlYEvpEeiDYNBtoVGnnA" association="_ol8uEEvpEeiDYNBtoVGnnA">
+                    <defaultValue xmi:type="uml:LiteralString" xmi:id="_ojMVAUvpEeiDYNBtoVGnnA" value="r -> r instanceof Supervisor"/>
+                  </ownedAttribute>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oksw4EvpEeiDYNBtoVGnnA" name="Supervisor" specification="_n6YokEvpEeiDYNBtoVGnnA">
+                    <ownedParameter xmi:id="_oksw4UvpEeiDYNBtoVGnnA" name="name">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_oksw4kvpEeiDYNBtoVGnnA" type="_n6FGkEvpEeiDYNBtoVGnnA" direction="return"/>
+                    <language>java</language>
+                    <body>super.name = name;
+	</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:id="_n6YokEvpEeiDYNBtoVGnnA" name="Supervisor" method="_oksw4EvpEeiDYNBtoVGnnA">
+                    <eAnnotations xmi:id="_n6adwEvpEeiDYNBtoVGnnA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                      <details xmi:id="_n6bE0EvpEeiDYNBtoVGnnA" key="create"/>
+                    </eAnnotations>
+                    <ownedParameter xmi:id="_n6ZPoEvpEeiDYNBtoVGnnA" name="name">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_n6bE0UvpEeiDYNBtoVGnnA" type="_n6FGkEvpEeiDYNBtoVGnnA" direction="return"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_n78HwEvpEeiDYNBtoVGnnA" name="AgentQueue">
+                  <generalization xmi:id="_odGUEEvpEeiDYNBtoVGnnA" general="_nyFoMEvpEeiDYNBtoVGnnA"/>
+                  <ownedAttribute xmi:id="_ojpoAEvpEeiDYNBtoVGnnA" name="queue" visibility="private" type="_oc4RoEvpEeiDYNBtoVGnnA" association="_omXk0EvpEeiDYNBtoVGnnA"/>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_okyQcEvpEeiDYNBtoVGnnA" name="AgentQueue" specification="_ogqlcEvpEeiDYNBtoVGnnA">
+                    <ownedParameter xmi:id="_okyQcUvpEeiDYNBtoVGnnA" name="queue" type="_oc4RoEvpEeiDYNBtoVGnnA"/>
+                    <ownedParameter xmi:id="_okyQckvpEeiDYNBtoVGnnA" type="_n78HwEvpEeiDYNBtoVGnnA" direction="return"/>
+                    <language>java</language>
+                    <body>this.queue = queue;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_okzekEvpEeiDYNBtoVGnnA" name="answer" specification="_odANcEvpEeiDYNBtoVGnnA">
+                    <ownedParameter xmi:id="_okzekUvpEeiDYNBtoVGnnA" name="caller" type="_n-yncEvpEeiDYNBtoVGnnA"/>
+                    <ownedParameter xmi:id="_okzekkvpEeiDYNBtoVGnnA" type="_of9a0EvpEeiDYNBtoVGnnA" direction="return"/>
+                    <language>java</language>
+                    <body>queue.add(caller);
+		return () -> {/* I am sorry, hold on a second, our agents are busy, */};
+	</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:id="_odANcEvpEeiDYNBtoVGnnA" name="answer" method="_okzekEvpEeiDYNBtoVGnnA">
+                    <ownedParameter xmi:id="_odA0gEvpEeiDYNBtoVGnnA" name="caller" type="_n-yncEvpEeiDYNBtoVGnnA"/>
+                    <ownedParameter xmi:id="_ohBKwEvpEeiDYNBtoVGnnA" type="_of9a0EvpEeiDYNBtoVGnnA" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_ogqlcEvpEeiDYNBtoVGnnA" name="AgentQueue" method="_okyQcEvpEeiDYNBtoVGnnA">
+                    <eAnnotations xmi:id="_og1kkEvpEeiDYNBtoVGnnA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                      <details xmi:id="_og1kkUvpEeiDYNBtoVGnnA" key="create"/>
+                    </eAnnotations>
+                    <ownedParameter xmi:id="_og0WcEvpEeiDYNBtoVGnnA" name="queue" type="_oc4RoEvpEeiDYNBtoVGnnA"/>
+                    <ownedParameter xmi:id="_og1kkkvpEeiDYNBtoVGnnA" type="_n78HwEvpEeiDYNBtoVGnnA" direction="return"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_n8SGAEvpEeiDYNBtoVGnnA" name="Director">
+                  <generalization xmi:id="_odNBwEvpEeiDYNBtoVGnnA" general="_nyFoMEvpEeiDYNBtoVGnnA"/>
+                  <ownedAttribute xmi:id="_ojxj0EvpEeiDYNBtoVGnnA" name="isOneDirector" isStatic="true" type="_oaZlYEvpEeiDYNBtoVGnnA" association="_omdEYEvpEeiDYNBtoVGnnA">
+                    <defaultValue xmi:type="uml:LiteralString" xmi:id="_oj0nIEvpEeiDYNBtoVGnnA" value="r -> r instanceof Director"/>
+                  </ownedAttribute>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ok1TwEvpEeiDYNBtoVGnnA" name="Director" specification="_n8ZawEvpEeiDYNBtoVGnnA">
+                    <ownedParameter xmi:id="_ok1TwUvpEeiDYNBtoVGnnA" name="name">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_ok1TwkvpEeiDYNBtoVGnnA" type="_n8SGAEvpEeiDYNBtoVGnnA" direction="return"/>
+                    <language>java</language>
+                    <body>super.name = name;
+	</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:id="_n8ZawEvpEeiDYNBtoVGnnA" name="Director" method="_ok1TwEvpEeiDYNBtoVGnnA">
+                    <eAnnotations xmi:id="_n8b3AEvpEeiDYNBtoVGnnA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                      <details xmi:id="_n8b3AUvpEeiDYNBtoVGnnA" key="create"/>
+                    </eAnnotations>
+                    <ownedParameter xmi:id="_n8aB0EvpEeiDYNBtoVGnnA" name="name">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_n8ceEEvpEeiDYNBtoVGnnA" type="_n8SGAEvpEeiDYNBtoVGnnA" direction="return"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_n8lA8EvpEeiDYNBtoVGnnA" name="Operator">
+                  <generalization xmi:id="_odTvcEvpEeiDYNBtoVGnnA" general="_nyFoMEvpEeiDYNBtoVGnnA"/>
+                  <ownedAttribute xmi:id="_oj3DYEvpEeiDYNBtoVGnnA" name="isOneOperator" isStatic="true" type="_oaZlYEvpEeiDYNBtoVGnnA" association="_omij8EvpEeiDYNBtoVGnnA">
+                    <defaultValue xmi:type="uml:LiteralString" xmi:id="_oj8i8EvpEeiDYNBtoVGnnA" value="r -> r instanceof Operator"/>
+                  </ownedAttribute>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ok2h4EvpEeiDYNBtoVGnnA" name="Operator" specification="_n8ruoEvpEeiDYNBtoVGnnA">
+                    <ownedParameter xmi:id="_ok2h4UvpEeiDYNBtoVGnnA" name="name">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_ok2h4kvpEeiDYNBtoVGnnA" type="_n8lA8EvpEeiDYNBtoVGnnA" direction="return"/>
+                    <language>java</language>
+                    <body>super.name = name;
+	</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:id="_n8ruoEvpEeiDYNBtoVGnnA" name="Operator" method="_ok2h4EvpEeiDYNBtoVGnnA">
+                    <eAnnotations xmi:id="_n8tj0EvpEeiDYNBtoVGnnA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                      <details xmi:id="_n8uK4EvpEeiDYNBtoVGnnA" key="create"/>
+                    </eAnnotations>
+                    <ownedParameter xmi:id="_n8sVsEvpEeiDYNBtoVGnnA" name="name">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_n8ux8EvpEeiDYNBtoVGnnA" type="_n8lA8EvpEeiDYNBtoVGnnA" direction="return"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Association" xmi:id="_ol8uEEvpEeiDYNBtoVGnnA" name="" memberEnd="_ol8uEUvpEeiDYNBtoVGnnA _ojB88EvpEeiDYNBtoVGnnA">
+                  <ownedEnd xmi:id="_ol8uEUvpEeiDYNBtoVGnnA" name="" type="_n6FGkEvpEeiDYNBtoVGnnA" association="_ol8uEEvpEeiDYNBtoVGnnA"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Association" xmi:id="_omXk0EvpEeiDYNBtoVGnnA" name="" memberEnd="_omXk0UvpEeiDYNBtoVGnnA _ojpoAEvpEeiDYNBtoVGnnA">
+                  <ownedEnd xmi:id="_omXk0UvpEeiDYNBtoVGnnA" name="" type="_n78HwEvpEeiDYNBtoVGnnA" association="_omXk0EvpEeiDYNBtoVGnnA"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Association" xmi:id="_omdEYEvpEeiDYNBtoVGnnA" name="" memberEnd="_omdEYUvpEeiDYNBtoVGnnA _ojxj0EvpEeiDYNBtoVGnnA">
+                  <ownedEnd xmi:id="_omdEYUvpEeiDYNBtoVGnnA" name="" type="_n8SGAEvpEeiDYNBtoVGnnA" association="_omdEYEvpEeiDYNBtoVGnnA"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Association" xmi:id="_omij8EvpEeiDYNBtoVGnnA" name="" memberEnd="_omij8UvpEeiDYNBtoVGnnA _oj3DYEvpEeiDYNBtoVGnnA">
+                  <ownedEnd xmi:id="_omij8UvpEeiDYNBtoVGnnA" name="" type="_n8lA8EvpEeiDYNBtoVGnnA" association="_omij8EvpEeiDYNBtoVGnnA"/>
+                </packagedElement>
+              </packagedElement>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_nrAIwEvpEeiDYNBtoVGnnA" name="interfaces">
+              <packagedElement xmi:type="uml:Interface" xmi:id="_oAgesEvpEeiDYNBtoVGnnA" name="Receiver">
+                <ownedOperation xmi:id="_oA3EAEvpEeiDYNBtoVGnnA" name="isBusy" method="_olCIEEvpEeiDYNBtoVGnnA">
+                  <eAnnotations xmi:id="_oA3rEEvpEeiDYNBtoVGnnA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                    <details xmi:id="_oA4SIEvpEeiDYNBtoVGnnA" key="defender"/>
+                  </eAnnotations>
+                  <ownedParameter xmi:id="_oA5gQEvpEeiDYNBtoVGnnA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oe4cwEvpEeiDYNBtoVGnnA" name="answer">
+                  <ownedParameter xmi:id="_oe5D0EvpEeiDYNBtoVGnnA" name="caller" type="_n-yncEvpEeiDYNBtoVGnnA"/>
+                  <ownedParameter xmi:id="_ohMw8EvpEeiDYNBtoVGnnA" type="_of9a0EvpEeiDYNBtoVGnnA" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_oBJX4EvpEeiDYNBtoVGnnA" name="Sender">
+                <ownedAttribute xmi:id="_oBVlIEvpEeiDYNBtoVGnnA" name="attended">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedAttribute>
+              </packagedElement>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_nrlXkEvpEeiDYNBtoVGnnA" name="abstracts">
+              <packagedElement xmi:type="uml:Class" xmi:id="_nyFoMEvpEeiDYNBtoVGnnA" name="Agent" isAbstract="true">
+                <generalization xmi:id="_obH-IEvpEeiDYNBtoVGnnA" general="_n252wEvpEeiDYNBtoVGnnA"/>
+                <ownedAttribute xmi:id="_ohV64EvpEeiDYNBtoVGnnA" name="isBusy" isStatic="true" type="_oaZlYEvpEeiDYNBtoVGnnA" association="_olpzIEvpEeiDYNBtoVGnnA">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_ohdPoEvpEeiDYNBtoVGnnA" value="Receiver::isBusy"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_oh8-4EvpEeiDYNBtoVGnnA" name="senderAttended" visibility="protected" type="_oBJX4EvpEeiDYNBtoVGnnA" isOrdered="true" association="_oly9EEvpEeiDYNBtoVGnnA">
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oh-0EEvpEeiDYNBtoVGnnA" value="*"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_oiApQEvpEeiDYNBtoVGnnA" value="new ArrayList&lt;Sender>()"/>
+                </ownedAttribute>
+                <interfaceRealization xmi:id="_oatucEvpEeiDYNBtoVGnnA" client="_nyFoMEvpEeiDYNBtoVGnnA" supplier="_oAgesEvpEeiDYNBtoVGnnA" contract="_oAgesEvpEeiDYNBtoVGnnA"/>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_okYn0EvpEeiDYNBtoVGnnA" name="setBusy" specification="_nytTQEvpEeiDYNBtoVGnnA">
+                  <ownedParameter xmi:id="_okYn0UvpEeiDYNBtoVGnnA" name="busy">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_okYn0kvpEeiDYNBtoVGnnA" type="_nyFoMEvpEeiDYNBtoVGnnA" direction="return"/>
+                  <language>java</language>
+                  <body>this.busy = busy;
+		return this;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_okZ18EvpEeiDYNBtoVGnnA" name="addSender" specification="_oa5UoEvpEeiDYNBtoVGnnA">
+                  <ownedParameter xmi:id="_okZ18UvpEeiDYNBtoVGnnA" name="sender" type="_oBJX4EvpEeiDYNBtoVGnnA"/>
+                  <language>java</language>
+                  <body>senderAttended.add(sender);
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_okbEEEvpEeiDYNBtoVGnnA" name="getListSenderAttended" specification="_nzA1QEvpEeiDYNBtoVGnnA">
+                  <ownedParameter xmi:id="_okbEEUvpEeiDYNBtoVGnnA" type="_oBJX4EvpEeiDYNBtoVGnnA" isOrdered="true" direction="return">
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_okbEEkvpEeiDYNBtoVGnnA" value="*"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>return senderAttended;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_okcSMEvpEeiDYNBtoVGnnA" name="isBusy" specification="_nzR7AEvpEeiDYNBtoVGnnA">
+                  <ownedParameter xmi:id="_okcSMUvpEeiDYNBtoVGnnA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>return busy;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_okdgUEvpEeiDYNBtoVGnnA" name="answer" specification="_oa8X8EvpEeiDYNBtoVGnnA">
+                  <ownedParameter xmi:id="_okdgUUvpEeiDYNBtoVGnnA" name="caller" type="_n-yncEvpEeiDYNBtoVGnnA"/>
+                  <ownedParameter xmi:id="_okdgUkvpEeiDYNBtoVGnnA" type="_of9a0EvpEeiDYNBtoVGnnA" direction="return"/>
+                  <language>java</language>
+                  <body>Call call = new IncomingCall(this, caller);
+		this.addSender(caller);
+		return call;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_okeHYEvpEeiDYNBtoVGnnA" name="toString" specification="_nzsxwEvpEeiDYNBtoVGnnA">
+                  <ownedParameter xmi:id="_okeucEvpEeiDYNBtoVGnnA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>return &quot;Agent [name=&quot; + this.getClass().getSimpleName() + &quot; &quot; + name  + &quot;, busy =&quot;+ busy + &quot;, senderAttended=&quot; + senderAttended.size() + &quot;]&quot;;
+	</body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_nytTQEvpEeiDYNBtoVGnnA" name="setBusy" method="_okYn0EvpEeiDYNBtoVGnnA">
+                  <ownedParameter xmi:id="_nyyy0EvpEeiDYNBtoVGnnA" name="busy">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_oa4GgEvpEeiDYNBtoVGnnA" type="_nyFoMEvpEeiDYNBtoVGnnA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_nzA1QEvpEeiDYNBtoVGnnA" name="getListSenderAttended" method="_okbEEEvpEeiDYNBtoVGnnA">
+                  <ownedParameter xmi:id="_nzDRgEvpEeiDYNBtoVGnnA" type="_oBJX4EvpEeiDYNBtoVGnnA" isOrdered="true" direction="return">
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nzEfoEvpEeiDYNBtoVGnnA" value="*"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_nzR7AEvpEeiDYNBtoVGnnA" name="isBusy" method="_okcSMEvpEeiDYNBtoVGnnA">
+                  <ownedParameter xmi:id="_nzZPwEvpEeiDYNBtoVGnnA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_nzsxwEvpEeiDYNBtoVGnnA" name="toString" method="_okeHYEvpEeiDYNBtoVGnnA">
+                  <ownedParameter xmi:id="_nz_ssEvpEeiDYNBtoVGnnA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oa5UoEvpEeiDYNBtoVGnnA" name="addSender" method="_okZ18EvpEeiDYNBtoVGnnA">
+                  <ownedParameter xmi:id="_oa57sEvpEeiDYNBtoVGnnA" name="sender" type="_oBJX4EvpEeiDYNBtoVGnnA"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oa8X8EvpEeiDYNBtoVGnnA" name="answer" method="_okdgUEvpEeiDYNBtoVGnnA">
+                  <ownedParameter xmi:id="_oa8_AEvpEeiDYNBtoVGnnA" name="caller" type="_n-yncEvpEeiDYNBtoVGnnA"/>
+                  <ownedParameter xmi:id="_ogHy4EvpEeiDYNBtoVGnnA" type="_of9a0EvpEeiDYNBtoVGnnA" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_n1_30EvpEeiDYNBtoVGnnA" name="Call" isAbstract="true">
+                <ownedAttribute xmi:id="_oiLoYEvpEeiDYNBtoVGnnA" name="MIN_TIME_CALL_MILLI_SECONDS" isLeaf="true" isStatic="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_oiTkMEvpEeiDYNBtoVGnnA" value="5000"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_oiX1oEvpEeiDYNBtoVGnnA" name="MAX_TIME_CALL_MILLI_SECONDS" isLeaf="true" isStatic="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_oiYcsEvpEeiDYNBtoVGnnA" value="10000"/>
+                </ownedAttribute>
+                <interfaceRealization xmi:id="_ogPHoEvpEeiDYNBtoVGnnA" client="_n1_30EvpEeiDYNBtoVGnnA" supplier="_of9a0EvpEeiDYNBtoVGnnA" contract="_of9a0EvpEeiDYNBtoVGnnA"/>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_okf8kEvpEeiDYNBtoVGnnA" name="getCallTime" specification="_n2OhUEvpEeiDYNBtoVGnnA">
+                  <ownedParameter xmi:id="_okf8kUvpEeiDYNBtoVGnnA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>return new Random().ints(MIN_TIME_CALL_MILLI_SECONDS, 
+				           MAX_TIME_CALL_MILLI_SECONDS).findAny().getAsInt();
+	</body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_n2OhUEvpEeiDYNBtoVGnnA" name="getCallTime" method="_okf8kEvpEeiDYNBtoVGnnA">
+                  <ownedParameter xmi:id="_n2V2EEvpEeiDYNBtoVGnnA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_obpikEvpEeiDYNBtoVGnnA" name="doCall" visibility="protected" isAbstract="true">
+                  <ownedParameter xmi:id="_obqJoEvpEeiDYNBtoVGnnA" name="sender" type="_oBJX4EvpEeiDYNBtoVGnnA"/>
+                  <ownedParameter xmi:id="_obqwsEvpEeiDYNBtoVGnnA" name="receiver" type="_oAgesEvpEeiDYNBtoVGnnA"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_n252wEvpEeiDYNBtoVGnnA" name="Person" isAbstract="true">
+                <ownedAttribute xmi:id="_oioUUEvpEeiDYNBtoVGnnA" name="name" visibility="protected">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_oir-sEvpEeiDYNBtoVGnnA" name="busy" visibility="protected">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedAttribute>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_okhKsEvpEeiDYNBtoVGnnA" name="getName" specification="_n3V7oEvpEeiDYNBtoVGnnA">
+                  <ownedParameter xmi:id="_okhKsUvpEeiDYNBtoVGnnA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>return this.name;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oki_4EvpEeiDYNBtoVGnnA" name="isBusy" specification="_n4GJkEvpEeiDYNBtoVGnnA">
+                  <ownedParameter xmi:id="_oki_4UvpEeiDYNBtoVGnnA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>return busy;
+	</body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_n3V7oEvpEeiDYNBtoVGnnA" name="getName" method="_okhKsEvpEeiDYNBtoVGnnA">
+                  <ownedParameter xmi:id="_n38YkEvpEeiDYNBtoVGnnA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_n4GJkEvpEeiDYNBtoVGnnA" name="isBusy" method="_oki_4EvpEeiDYNBtoVGnnA">
+                  <ownedParameter xmi:id="_n4PTgEvpEeiDYNBtoVGnnA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                  </ownedParameter>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_olpzIEvpEeiDYNBtoVGnnA" name="" memberEnd="_olpzIUvpEeiDYNBtoVGnnA _ohV64EvpEeiDYNBtoVGnnA">
+                <ownedEnd xmi:id="_olpzIUvpEeiDYNBtoVGnnA" name="" type="_nyFoMEvpEeiDYNBtoVGnnA" association="_olpzIEvpEeiDYNBtoVGnnA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_oly9EEvpEeiDYNBtoVGnnA" name="" memberEnd="_oly9EUvpEeiDYNBtoVGnnA _oh8-4EvpEeiDYNBtoVGnnA">
+                <ownedEnd xmi:id="_oly9EUvpEeiDYNBtoVGnnA" name="" type="_nyFoMEvpEeiDYNBtoVGnnA" association="_oly9EEvpEeiDYNBtoVGnnA"/>
+              </packagedElement>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_nx9FUEvpEeiDYNBtoVGnnA" name="App">
+              <ownedComment xmi:id="_olFLYEvpEeiDYNBtoVGnnA">
+                <body>Hello world!
+ *</body>
+              </ownedComment>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_nqYdsEvpEeiDYNBtoVGnnA" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_nqZEwEvpEeiDYNBtoVGnnA" name="util">
+        <packagedElement xmi:type="uml:Package" xmi:id="_nqbhAEvpEeiDYNBtoVGnnA" name="stream">
+          <packagedElement xmi:type="uml:Interface" xmi:id="_oZ52IEvpEeiDYNBtoVGnnA" name="IntStream"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_oeA6EUvpEeiDYNBtoVGnnA" name="Collectors"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_nq73UEvpEeiDYNBtoVGnnA" name="function">
+          <packagedElement xmi:type="uml:Interface" xmi:id="_oaZlYEvpEeiDYNBtoVGnnA" name="Predicate"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_nuloQEvpEeiDYNBtoVGnnA" name="concurrent">
+          <packagedElement xmi:type="uml:Package" xmi:id="_nu3VEEvpEeiDYNBtoVGnnA" name="locks">
+            <packagedElement xmi:type="uml:Class" xmi:id="_od9PsEvpEeiDYNBtoVGnnA" name="ReentrantLock"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_oc4RoEvpEeiDYNBtoVGnnA" name="ConcurrentLinkedQueue"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_odri4EvpEeiDYNBtoVGnnA" name="ExecutorService"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_od4XMEvpEeiDYNBtoVGnnA" name="Executors"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_oaN_MEvpEeiDYNBtoVGnnA" name="ArrayList"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_oaUF0EvpEeiDYNBtoVGnnA" name="List"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_oba5EEvpEeiDYNBtoVGnnA" name="Random"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_odlcQEvpEeiDYNBtoVGnnA" name="Collections"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_of8zwEvpEeiDYNBtoVGnnA" name="lang">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_of9a0EvpEeiDYNBtoVGnnA" name="Runnable"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ntusoEvpEeiDYNBtoVGnnA" name="org">
+      <packagedElement xmi:type="uml:Package" xmi:id="_nt0zQEvpEeiDYNBtoVGnnA" name="slf4j">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_ocEZUEvpEeiDYNBtoVGnnA" name="Logger"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ocOxYUvpEeiDYNBtoVGnnA" name="LoggerFactory"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_m1PlcEvpEeiDYNBtoVGnnA">
+      <eAnnotations xmi:id="_m1PlcUvpEeiDYNBtoVGnnA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_m1QzkEvpEeiDYNBtoVGnnA" base_Package="_ltkywEvpEeiDYNBtoVGnnA">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_nzmrIEvpEeiDYNBtoVGnnA" base_Element="_nzR7AEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:Annotations xmi:id="_nzpucEvpEeiDYNBtoVGnnA" base_Element="_nzR7AEvpEeiDYNBtoVGnnA">
+    <annotations xmi:id="_nzpucUvpEeiDYNBtoVGnnA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_n0GaYEvpEeiDYNBtoVGnnA" base_Element="_nzsxwEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:Annotations xmi:id="_n0LS4EvpEeiDYNBtoVGnnA" base_Element="_nzsxwEvpEeiDYNBtoVGnnA">
+    <annotations xmi:id="_n0LS4UvpEeiDYNBtoVGnnA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_n7Mg4EvpEeiDYNBtoVGnnA" base_Element="_n7JdkEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:Annotations xmi:id="_n7Vq0EvpEeiDYNBtoVGnnA" base_Element="_n7JdkEvpEeiDYNBtoVGnnA">
+    <annotations xmi:id="_n7WR4EvpEeiDYNBtoVGnnA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_n7fb0EvpEeiDYNBtoVGnnA" base_Element="_n7W48EvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:Annotations xmi:id="_n7h4EEvpEeiDYNBtoVGnnA" base_Element="_n7W48EvpEeiDYNBtoVGnnA">
+    <annotations xmi:id="_n7ifIEvpEeiDYNBtoVGnnA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_n_cHsEvpEeiDYNBtoVGnnA" base_Element="_n_SWsEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:Annotations xmi:id="_n_ej8EvpEeiDYNBtoVGnnA" base_Element="_n_SWsEvpEeiDYNBtoVGnnA">
+    <annotations xmi:id="_n_ej8UvpEeiDYNBtoVGnnA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_n_vCoEvpEeiDYNBtoVGnnA" base_Element="_n_gZIEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:Annotations xmi:id="_n_6BwEvpEeiDYNBtoVGnnA" base_Element="_n_gZIEvpEeiDYNBtoVGnnA">
+    <annotations xmi:id="_n_6o0EvpEeiDYNBtoVGnnA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oAHdIEvpEeiDYNBtoVGnnA" base_Element="_n_7P4EvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:Annotations xmi:id="_oAJSUEvpEeiDYNBtoVGnnA" base_Element="_n_7P4EvpEeiDYNBtoVGnnA">
+    <annotations xmi:id="_oAJ5YEvpEeiDYNBtoVGnnA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oA9KoEvpEeiDYNBtoVGnnA" base_Element="_oA3EAEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:Reference xmi:id="_oaFcUEvpEeiDYNBtoVGnnA" base_Element="_oZ52IEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:Reference xmi:id="_oaS3sEvpEeiDYNBtoVGnnA" base_Element="_oaN_MEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:Reference xmi:id="_oaY-UEvpEeiDYNBtoVGnnA" base_Element="_oaUF0EvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:Reference xmi:id="_oarSMEvpEeiDYNBtoVGnnA" base_Element="_oaZlYEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_obCekEvpEeiDYNBtoVGnnA" base_Element="_oa8X8EvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:Annotations xmi:id="_obGI8EvpEeiDYNBtoVGnnA" base_Element="_oa8X8EvpEeiDYNBtoVGnnA">
+    <annotations xmi:id="_obGwAEvpEeiDYNBtoVGnnA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_obmfQEvpEeiDYNBtoVGnnA" base_Element="_oba5EEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:Reference xmi:id="_ocOxYEvpEeiDYNBtoVGnnA" base_Element="_ocEZUEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:Reference xmi:id="_ocSbwEvpEeiDYNBtoVGnnA" base_Element="_ocOxYUvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ocsrcEvpEeiDYNBtoVGnnA" base_Element="_ociTYEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:Annotations xmi:id="_ocugoEvpEeiDYNBtoVGnnA" base_Element="_ociTYEvpEeiDYNBtoVGnnA">
+    <annotations xmi:id="_ocvHsEvpEeiDYNBtoVGnnA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_oc8jEEvpEeiDYNBtoVGnnA" base_Element="_oc4RoEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_odDQwEvpEeiDYNBtoVGnnA" base_Element="_odANcEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:Annotations xmi:id="_odEe4EvpEeiDYNBtoVGnnA" base_Element="_odANcEvpEeiDYNBtoVGnnA">
+    <annotations xmi:id="_odFF8EvpEeiDYNBtoVGnnA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_odq70EvpEeiDYNBtoVGnnA" base_Element="_odlcQEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:Reference xmi:id="_od3wIEvpEeiDYNBtoVGnnA" base_Element="_odri4EvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:Reference xmi:id="_od8ooEvpEeiDYNBtoVGnnA" base_Element="_od4XMEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:Reference xmi:id="_oeA6EEvpEeiDYNBtoVGnnA" base_Element="_od9PsEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:Reference xmi:id="_oeOVcEvpEeiDYNBtoVGnnA" base_Element="_oeA6EUvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:Reference xmi:id="_ogHL0EvpEeiDYNBtoVGnnA" base_Element="_of9a0EvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:Generics xmi:id="_og52AEvpEeiDYNBtoVGnnA" genericsValue="Sender" base_Element="_og0WcEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:Generics xmi:id="_ohZlQEvpEeiDYNBtoVGnnA" genericsValue="Receiver" base_Element="_ohV64EvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ohzN4EvpEeiDYNBtoVGnnA" base_Element="_ohV64EvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oiCecEvpEeiDYNBtoVGnnA" base_Element="_oh8-4EvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oiWngEvpEeiDYNBtoVGnnA" base_Element="_oiLoYEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oimfIEvpEeiDYNBtoVGnnA" base_Element="_oiX1oEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oiqwkEvpEeiDYNBtoVGnnA" base_Element="_oioUUEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oitz4EvpEeiDYNBtoVGnnA" base_Element="_oir-sEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oizTcEvpEeiDYNBtoVGnnA" base_Element="_oivCAEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oi290EvpEeiDYNBtoVGnnA" base_Element="_oiz6gEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oi6oMEvpEeiDYNBtoVGnnA" base_Element="_oi4L8EvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ojAHwEvpEeiDYNBtoVGnnA" base_Element="_oi9EcEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:Generics xmi:id="_ojMVAEvpEeiDYNBtoVGnnA" genericsValue="Receiver" base_Element="_ojB88EvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ojSboEvpEeiDYNBtoVGnnA" base_Element="_ojB88EvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ojWtEEvpEeiDYNBtoVGnnA" base_Element="_ojUQ0EvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ojeB0EvpEeiDYNBtoVGnnA" base_Element="_ojX7MEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ojhsMEvpEeiDYNBtoVGnnA" base_Element="_ojfP8EvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ojnLwEvpEeiDYNBtoVGnnA" base_Element="_oji6UEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:Generics xmi:id="_ojt5cEvpEeiDYNBtoVGnnA" genericsValue="Sender" base_Element="_ojpoAEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ojvuoEvpEeiDYNBtoVGnnA" base_Element="_ojpoAEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:Generics xmi:id="_oj0AEEvpEeiDYNBtoVGnnA" genericsValue="Receiver" base_Element="_ojxj0EvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oj11QEvpEeiDYNBtoVGnnA" base_Element="_ojxj0EvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:Generics xmi:id="_oj6twEvpEeiDYNBtoVGnnA" genericsValue="Receiver" base_Element="_oj3DYEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oj9xEEvpEeiDYNBtoVGnnA" base_Element="_oj3DYEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:Generics xmi:id="_okEewEvpEeiDYNBtoVGnnA" genericsValue="Sender" base_Element="_okCCgEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_okJ-UEvpEeiDYNBtoVGnnA" base_Element="_okCCgEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_okMakEvpEeiDYNBtoVGnnA" base_Element="_okLMcEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_okR6IEvpEeiDYNBtoVGnnA" base_Element="_okOPwEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_okVkgEvpEeiDYNBtoVGnnA" base_Element="_okTvUEvpEeiDYNBtoVGnnA"/>
+  <uml:OpaqueBehavior xmi:id="_olCIEEvpEeiDYNBtoVGnnA" name="isBusy" specification="_oA3EAEvpEeiDYNBtoVGnnA">
+    <ownedParameter xmi:id="_olCvIEvpEeiDYNBtoVGnnA" direction="return">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>return false;
+	</body>
+  </uml:OpaqueBehavior>
+  <UMLLabProfile:Reference xmi:id="_olyWAEvpEeiDYNBtoVGnnA" base_Element="_olpzIEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:Reference xmi:id="_ol7f8EvpEeiDYNBtoVGnnA" base_Element="_oly9EEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:Reference xmi:id="_omCNoEvpEeiDYNBtoVGnnA" base_Element="_ol8uEEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:Reference xmi:id="_omHGIEvpEeiDYNBtoVGnnA" base_Element="_omC0sEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:Reference xmi:id="_omMlsEvpEeiDYNBtoVGnnA" base_Element="_omHtMEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:Reference xmi:id="_omWWsEvpEeiDYNBtoVGnnA" base_Element="_omQ3IEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:Reference xmi:id="_omcdUEvpEeiDYNBtoVGnnA" base_Element="_omXk0EvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:Reference xmi:id="_omh84EvpEeiDYNBtoVGnnA" base_Element="_omdEYEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:Reference xmi:id="_omoDgEvpEeiDYNBtoVGnnA" base_Element="_omij8EvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:Reference xmi:id="_omsU8EvpEeiDYNBtoVGnnA" base_Element="_ompRoEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:Reference xmi:id="_om2tAEvpEeiDYNBtoVGnnA" base_Element="_oms8AEvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:Reference xmi:id="_om6-cEvpEeiDYNBtoVGnnA" base_Element="_om2tAUvpEeiDYNBtoVGnnA"/>
+  <UMLLabProfile:Reference xmi:id="_om-BwEvpEeiDYNBtoVGnnA" base_Element="_om6-cUvpEeiDYNBtoVGnnA"/>
+</xmi:XMI>

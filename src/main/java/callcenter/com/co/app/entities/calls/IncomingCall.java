@@ -10,8 +10,8 @@ import callcenter.com.co.app.entities.senders.Caller;
 import callcenter.com.co.app.interfaces.Receiver;
 import callcenter.com.co.app.interfaces.Sender;
 
-public class CallAgent extends Call {
-	final static Logger logger = LoggerFactory.getLogger(CallAgent.class);
+public class IncomingCall extends Call {
+	final static Logger logger = LoggerFactory.getLogger(IncomingCall.class);
 	
 
 	public Caller caller;
@@ -19,7 +19,7 @@ public class CallAgent extends Call {
 	
 	public int timeCall = getCallTime();
 
-	public CallAgent(Agent agent, Caller caller) {
+	public IncomingCall(Agent agent, Caller caller) {
 		this.agent = agent;
 		this.caller = caller;
 	}
@@ -39,8 +39,7 @@ public class CallAgent extends Call {
 	}
 
 	@Override
-	public void run() {
-		
+	public void run() {	
 		
 		doCall(this.caller, this.agent);
 	

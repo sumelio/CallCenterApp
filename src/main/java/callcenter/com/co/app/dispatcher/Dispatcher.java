@@ -123,7 +123,7 @@ public class Dispatcher {
 
 					   .setBusy(true); // From this moment the agent is busy
 
-			    // Create a thread (Call) and send the executorPool
+			    // Create a thread (CallUp) and send the executorPool
 				executor.execute(assignedAgent.answer((Caller) caller));
 
 

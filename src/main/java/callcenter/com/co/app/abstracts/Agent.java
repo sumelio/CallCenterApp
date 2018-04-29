@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.function.Predicate;
 
 import callcenter.com.co.app.dispatcher.Dispatcher;
-import callcenter.com.co.app.entities.calls.CallAgent;
+import callcenter.com.co.app.entities.calls.IncomingCall;
 import callcenter.com.co.app.entities.senders.Caller;
 import callcenter.com.co.app.interfaces.Receiver;
 import callcenter.com.co.app.interfaces.Sender;
@@ -36,7 +36,7 @@ public abstract class Agent extends Person implements Receiver {
 	
 	@Override
 	public Runnable answer(Caller caller) {
-		Call call = new CallAgent(this, caller);
+		Call call = new IncomingCall(this, caller);
 		this.addSender(caller);
 		return call;
 	}

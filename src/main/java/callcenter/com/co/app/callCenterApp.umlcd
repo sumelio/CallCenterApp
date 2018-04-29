@@ -1,0 +1,1323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_mJkLMEvpEeiDYNBtoVGnnA">
+  <modelElement href="callCenterApp.uml#_nqi1wEvpEeiDYNBtoVGnnA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pN10gEvpEeiDYNBtoVGnnA" targetItem="_pN3CoEvpEeiDYNBtoVGnnA" sourceItem="_pN1NcEvpEeiDYNBtoVGnnA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_pOoesEvpEeiDYNBtoVGnnA" sourceAnchor="160.0,0.0" targetAnchor="89.0,125.0" superClass="_pOJWgEvpEeiDYNBtoVGnnA" subClass="_pPNGcEvpEeiDYNBtoVGnnA">
+    <modelElement href="callCenterApp.uml#_obH-IEvpEeiDYNBtoVGnnA"/>
+    <bendpoints xmi:id="_qdXl4EvtEeiBI8R8_xXMhw" sourceY="-30" targetX="-219" targetY="110"/>
+    <bendpoints xmi:id="_qdXl4UvtEeiBI8R8_xXMhw" sourceX="220" sourceY="-39" targetX="1" targetY="101"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_pOpFwEvpEeiDYNBtoVGnnA" sourceAnchor="127.0,0.0" targetAnchor="145.0,96.0" dashed="true" superClass="_pUDxQEvpEeiDYNBtoVGnnA" subClass="_pPNGcEvpEeiDYNBtoVGnnA">
+    <modelElement href="callCenterApp.uml#_oatucEvpEeiDYNBtoVGnnA"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_pOqT4EvpEeiDYNBtoVGnnA" sourceAnchor="190.0,0.0" targetAnchor="9.0,76.0" target="_pUICsEvpEeiDYNBtoVGnnA" source="_pPNGcEvpEeiDYNBtoVGnnA">
+    <modelElement href="callCenterApp.uml#_oly9EEvpEeiDYNBtoVGnnA"/>
+    <bendpoints xmi:id="_qdW-0EvtEeiBI8R8_xXMhw" sourceY="-65" targetX="-314" targetY="79"/>
+    <bendpoints xmi:id="_qdW-0UvtEeiBI8R8_xXMhw" sourceX="315" sourceY="-65" targetX="1" targetY="79"/>
+    <stereotypes xmi:id="_pO16EEvpEeiDYNBtoVGnnA" name="Reference">
+      <modelElement href="callCenterApp.uml#_ol7f8EvpEeiDYNBtoVGnnA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_pO0E4EvpEeiDYNBtoVGnnA" text="">
+      <visualProperties xmi:id="_tWK70EvpEeiDYNBtoVGnnA" position="-21.0,-21.000000000000014"/>
+    </nameVisual>
+    <sourceRole xmi:id="_pO0r8EvpEeiDYNBtoVGnnA" aggregationKind="NONE" name="">
+      <modelElement href="callCenterApp.uml#_oly9EUvpEeiDYNBtoVGnnA"/>
+      <visualProperties xmi:id="_tWJGoEvpEeiDYNBtoVGnnA" position="28.0,-116.0"/>
+      <visibility xmi:id="_pO5kcUvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pO5kcEvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_pO1TAEvpEeiDYNBtoVGnnA" aggregationKind="NONE" name="senderAttended" navigable="true">
+      <modelElement href="callCenterApp.uml#_oh8-4EvpEeiDYNBtoVGnnA"/>
+      <visualProperties xmi:id="_tWNYEEvpEeiDYNBtoVGnnA" position="-130.0,9.999999999999972"/>
+      <stereotypes xmi:id="_e88-EEvqEeisQYf6iZKz6A" name="LegacyStyledElement">
+        <modelElement href="callCenterApp.uml#_oiCecEvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <visibility xmi:id="_pO6LgUvpEeiDYNBtoVGnnA" label="#"/>
+      <cardinality xmi:id="_pO6LgEvpEeiDYNBtoVGnnA" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_pPCuYEvpEeiDYNBtoVGnnA" source="_pPNGcEvpEeiDYNBtoVGnnA">
+    <modelElement href="callCenterApp.uml#_olpzIEvpEeiDYNBtoVGnnA"/>
+    <stereotypes xmi:id="_pPCuYUvpEeiDYNBtoVGnnA" name="Reference">
+      <modelElement href="callCenterApp.uml#_olyWAEvpEeiDYNBtoVGnnA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_pPCuYkvpEeiDYNBtoVGnnA" text=""/>
+    <sourceRole xmi:id="_pPCuY0vpEeiDYNBtoVGnnA" aggregationKind="NONE" name="">
+      <modelElement href="callCenterApp.uml#_olpzIUvpEeiDYNBtoVGnnA"/>
+      <visibility xmi:id="_pPCuZEvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pPCuZUvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_pPCuZkvpEeiDYNBtoVGnnA" aggregationKind="NONE" name="isBusy" navigable="true">
+      <modelElement href="callCenterApp.uml#_ohV64EvpEeiDYNBtoVGnnA"/>
+      <stereotypes xmi:id="_e9AocEvqEeisQYf6iZKz6A" name="Generics">
+        <modelElement href="callCenterApp.uml#_ohZlQEvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_e9BPgEvqEeisQYf6iZKz6A" name="LegacyStyledElement">
+        <modelElement href="callCenterApp.uml#_ohzN4EvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <visibility xmi:id="_pPCuZ0vpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pPCuaEvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_pQdqsEvpEeiDYNBtoVGnnA" sourceAnchor="169.0,184.0" targetAnchor="187.0,185.0" target="_pPNGcEvpEeiDYNBtoVGnnA" source="_pRQU4EvpEeiDYNBtoVGnnA">
+    <modelElement href="callCenterApp.uml#_oms8AEvpEeiDYNBtoVGnnA"/>
+    <bendpoints xmi:id="_qdUikEvtEeiBI8R8_xXMhw" sourceY="-15" targetX="1231" targetY="67"/>
+    <bendpoints xmi:id="_qdUikUvtEeiBI8R8_xXMhw" sourceX="-1229" sourceY="-9" targetX="2" targetY="73"/>
+    <stereotypes xmi:id="_pQjxUUvpEeiDYNBtoVGnnA" name="Reference">
+      <modelElement href="callCenterApp.uml#_om2tAEvpEeiDYNBtoVGnnA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_pQjKQEvpEeiDYNBtoVGnnA" text="">
+      <visualProperties xmi:id="_tWQbYEvpEeiDYNBtoVGnnA" position="-75.0,-21.000000000000114"/>
+    </nameVisual>
+    <sourceRole xmi:id="_pQjKQUvpEeiDYNBtoVGnnA" aggregationKind="NONE" name="">
+      <modelElement href="callCenterApp.uml#_oms8AUvpEeiDYNBtoVGnnA"/>
+      <visualProperties xmi:id="_tWPNQEvpEeiDYNBtoVGnnA" position="-123.0,22.0"/>
+      <visibility xmi:id="_pQ8L0EvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pQ2FMEvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_pQjxUEvpEeiDYNBtoVGnnA" aggregationKind="NONE" name="receivers" navigable="true">
+      <modelElement href="callCenterApp.uml#_okANUEvpEeiDYNBtoVGnnA"/>
+      <visualProperties xmi:id="_tWRpgEvpEeiDYNBtoVGnnA" position="1.0,8.000000000000227"/>
+      <visibility xmi:id="_pQ8y4UvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pQ8y4EvpEeiDYNBtoVGnnA" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pQh8IUvpEeiDYNBtoVGnnA" targetItem="_pRQU4EvpEeiDYNBtoVGnnA" sourceItem="_pQh8IEvpEeiDYNBtoVGnnA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pQk_cEvpEeiDYNBtoVGnnA" targetItem="_pRUmVkvpEeiDYNBtoVGnnA" sourceItem="_pQkYYEvpEeiDYNBtoVGnnA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pQmNkUvpEeiDYNBtoVGnnA" targetItem="_pRUmWUvpEeiDYNBtoVGnnA" sourceItem="_pQmNkEvpEeiDYNBtoVGnnA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_pQpQ4EvpEeiDYNBtoVGnnA" targetItem="_pRUmYkvpEeiDYNBtoVGnnA" sourceItem="_pQnbsEvpEeiDYNBtoVGnnA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_pRHyAEvpEeiDYNBtoVGnnA" source="_pRQU4EvpEeiDYNBtoVGnnA">
+    <modelElement href="callCenterApp.uml#_ompRoEvpEeiDYNBtoVGnnA"/>
+    <stereotypes xmi:id="_pRHyAUvpEeiDYNBtoVGnnA" name="Reference">
+      <modelElement href="callCenterApp.uml#_omsU8EvpEeiDYNBtoVGnnA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_pRHyAkvpEeiDYNBtoVGnnA" text=""/>
+    <sourceRole xmi:id="_pRHyA0vpEeiDYNBtoVGnnA" aggregationKind="NONE" name="">
+      <modelElement href="callCenterApp.uml#_ompRoUvpEeiDYNBtoVGnnA"/>
+      <visibility xmi:id="_pRHyBEvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pRHyBUvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_pRHyBkvpEeiDYNBtoVGnnA" aggregationKind="NONE" name="executor" navigable="true">
+      <modelElement href="callCenterApp.uml#_oj-_MEvpEeiDYNBtoVGnnA"/>
+      <visibility xmi:id="_pRHyB0vpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pRHyCEvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_pRLcYEvpEeiDYNBtoVGnnA" source="_pRQU4EvpEeiDYNBtoVGnnA">
+    <modelElement href="callCenterApp.uml#_om2tAUvpEeiDYNBtoVGnnA"/>
+    <stereotypes xmi:id="_pRLcYUvpEeiDYNBtoVGnnA" name="Reference">
+      <modelElement href="callCenterApp.uml#_om6-cEvpEeiDYNBtoVGnnA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_pRLcYkvpEeiDYNBtoVGnnA" text=""/>
+    <sourceRole xmi:id="_pRLcY0vpEeiDYNBtoVGnnA" aggregationKind="NONE" name="">
+      <modelElement href="callCenterApp.uml#_om3UEEvpEeiDYNBtoVGnnA"/>
+      <visibility xmi:id="_pRLcZEvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pRLcZUvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_pRLcZkvpEeiDYNBtoVGnnA" aggregationKind="NONE" name="queueCallers" navigable="true">
+      <modelElement href="callCenterApp.uml#_okCCgEvpEeiDYNBtoVGnnA"/>
+      <stereotypes xmi:id="_e-ZvkEvqEeisQYf6iZKz6A" name="Generics">
+        <modelElement href="callCenterApp.uml#_okEewEvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_e-a9sEvqEeisQYf6iZKz6A" name="LegacyStyledElement">
+        <modelElement href="callCenterApp.uml#_okJ-UEvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <visibility xmi:id="_pRLcZ0vpEeiDYNBtoVGnnA" label="-"/>
+      <cardinality xmi:id="_pRLcaEvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_pRPt0EvpEeiDYNBtoVGnnA" source="_pRQU4EvpEeiDYNBtoVGnnA">
+    <modelElement href="callCenterApp.uml#_om6-cUvpEeiDYNBtoVGnnA"/>
+    <stereotypes xmi:id="_pRPt0UvpEeiDYNBtoVGnnA" name="Reference">
+      <modelElement href="callCenterApp.uml#_om-BwEvpEeiDYNBtoVGnnA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_pRPt0kvpEeiDYNBtoVGnnA" text=""/>
+    <sourceRole xmi:id="_pRPt00vpEeiDYNBtoVGnnA" aggregationKind="NONE" name="">
+      <modelElement href="callCenterApp.uml#_om7lgEvpEeiDYNBtoVGnnA"/>
+      <visibility xmi:id="_pRPt1EvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pRPt1UvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_pRPt1kvpEeiDYNBtoVGnnA" aggregationKind="NONE" name="lock" navigable="true">
+      <modelElement href="callCenterApp.uml#_okLMcEvpEeiDYNBtoVGnnA"/>
+      <stereotypes xmi:id="_e-lVwEvqEeisQYf6iZKz6A" name="LegacyStyledElement">
+        <modelElement href="callCenterApp.uml#_okMakEvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <visibility xmi:id="_pRPt10vpEeiDYNBtoVGnnA" label="-"/>
+      <cardinality xmi:id="_pRPt2EvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_pR3Y4EvpEeiDYNBtoVGnnA" sourceAnchor="0.0,95.0" targetAnchor="327.0,155.0" target="_pPNGcEvpEeiDYNBtoVGnnA" source="_pSVS8EvpEeiDYNBtoVGnnA">
+    <modelElement href="callCenterApp.uml#_omQ3IEvpEeiDYNBtoVGnnA"/>
+    <stereotypes xmi:id="_pR8RYEvpEeiDYNBtoVGnnA" name="Reference">
+      <modelElement href="callCenterApp.uml#_omWWsEvpEeiDYNBtoVGnnA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_pR7DQEvpEeiDYNBtoVGnnA" text="">
+      <visualProperties xmi:id="_tWUs0EvpEeiDYNBtoVGnnA" position="-3.0,1.9999999999999716"/>
+    </nameVisual>
+    <sourceRole xmi:id="_pR7qUEvpEeiDYNBtoVGnnA" aggregationKind="NONE" name="">
+      <modelElement href="callCenterApp.uml#_omQ3IUvpEeiDYNBtoVGnnA"/>
+      <visualProperties xmi:id="_tWTesEvpEeiDYNBtoVGnnA" position="-32.0,2.0"/>
+      <visibility xmi:id="_pSHQgEvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pSGpcUvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_pR7qUUvpEeiDYNBtoVGnnA" aggregationKind="NONE" name="agent" navigable="true">
+      <modelElement href="callCenterApp.uml#_ojfP8EvpEeiDYNBtoVGnnA"/>
+      <visualProperties xmi:id="_tWVT4EvpEeiDYNBtoVGnnA" position="48.0,2.0000000000001137"/>
+      <stereotypes xmi:id="_e-vGwEvqEeisQYf6iZKz6A" name="LegacyStyledElement">
+        <modelElement href="callCenterApp.uml#_ojhsMEvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <visibility xmi:id="_pSH3kEvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pSHQgUvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_pR51IEvpEeiDYNBtoVGnnA" sourceAnchor="198.0,0.0" targetAnchor="184.0,124.0" superClass="_pOZ1MEvpEeiDYNBtoVGnnA" subClass="_pSVS8EvpEeiDYNBtoVGnnA">
+    <modelElement href="callCenterApp.uml#_ocvuwEvpEeiDYNBtoVGnnA"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_pR6cMEvpEeiDYNBtoVGnnA" sourceAnchor="0.0,9.0" targetAnchor="321.0,68.0" target="_pT6nUEvpEeiDYNBtoVGnnA" source="_pSVS8EvpEeiDYNBtoVGnnA">
+    <modelElement href="callCenterApp.uml#_omHtMEvpEeiDYNBtoVGnnA"/>
+    <stereotypes xmi:id="_pSGpcEvpEeiDYNBtoVGnnA" name="Reference">
+      <modelElement href="callCenterApp.uml#_omMlsEvpEeiDYNBtoVGnnA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_pSFbUEvpEeiDYNBtoVGnnA" text="">
+      <visualProperties xmi:id="_tWY-QEvpEeiDYNBtoVGnnA" position="-18.0,-21.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_pSGCYEvpEeiDYNBtoVGnnA" aggregationKind="NONE" name="">
+      <modelElement href="callCenterApp.uml#_omHtMUvpEeiDYNBtoVGnnA"/>
+      <visualProperties xmi:id="_tWXJEEvpEeiDYNBtoVGnnA" position="-31.0,-45.0"/>
+      <visibility xmi:id="_pSK64EvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pSKT0EvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_pSGCYUvpEeiDYNBtoVGnnA" aggregationKind="NONE" name="caller" navigable="true">
+      <modelElement href="callCenterApp.uml#_ojX7MEvpEeiDYNBtoVGnnA"/>
+      <visualProperties xmi:id="_tWZlUEvpEeiDYNBtoVGnnA" position="3.0,2.0"/>
+      <stereotypes xmi:id="_e-4QsEvqEeisQYf6iZKz6A" name="LegacyStyledElement">
+        <modelElement href="callCenterApp.uml#_ojeB0EvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <visibility xmi:id="_pSMJAEvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pSK64UvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_pSSPoEvpEeiDYNBtoVGnnA" source="_pSVS8EvpEeiDYNBtoVGnnA">
+    <modelElement href="callCenterApp.uml#_omC0sEvpEeiDYNBtoVGnnA"/>
+    <stereotypes xmi:id="_pSSPoUvpEeiDYNBtoVGnnA" name="Reference">
+      <modelElement href="callCenterApp.uml#_omHGIEvpEeiDYNBtoVGnnA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_pSSPokvpEeiDYNBtoVGnnA" text=""/>
+    <sourceRole xmi:id="_pSSPo0vpEeiDYNBtoVGnnA" aggregationKind="NONE" name="">
+      <modelElement href="callCenterApp.uml#_omC0sUvpEeiDYNBtoVGnnA"/>
+      <visibility xmi:id="_pSSPpEvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pSSPpUvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_pSSPpkvpEeiDYNBtoVGnnA" aggregationKind="NONE" name="logger" navigable="true">
+      <modelElement href="callCenterApp.uml#_ojUQ0EvpEeiDYNBtoVGnnA"/>
+      <stereotypes xmi:id="_fBgt8EvqEeisQYf6iZKz6A" name="LegacyStyledElement">
+        <modelElement href="callCenterApp.uml#_ojWtEEvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <visibility xmi:id="_pSSPp0vpEeiDYNBtoVGnnA" label="~"/>
+      <cardinality xmi:id="_pSSPqEvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_pSu7kEvpEeiDYNBtoVGnnA" sourceAnchor="211.0,0.0" targetAnchor="159.0,185.0" superClass="_pPNGcEvpEeiDYNBtoVGnnA" subClass="_pS6hwEvpEeiDYNBtoVGnnA">
+    <modelElement href="callCenterApp.uml#_ob6oUEvpEeiDYNBtoVGnnA"/>
+    <bendpoints xmi:id="_qdTUcEvtEeiBI8R8_xXMhw" sourceY="-31" targetX="435" targetY="132"/>
+    <bendpoints xmi:id="_qdTUcUvtEeiBI8R8_xXMhw" sourceX="-434" sourceY="-42" targetX="1" targetY="121"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_pSwJsEvpEeiDYNBtoVGnnA" source="_pS6hwEvpEeiDYNBtoVGnnA">
+    <modelElement href="callCenterApp.uml#_ol8uEEvpEeiDYNBtoVGnnA"/>
+    <stereotypes xmi:id="_pS1CMUvpEeiDYNBtoVGnnA" name="Reference">
+      <modelElement href="callCenterApp.uml#_omCNoEvpEeiDYNBtoVGnnA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_pSz0EEvpEeiDYNBtoVGnnA" text=""/>
+    <sourceRole xmi:id="_pS0bIEvpEeiDYNBtoVGnnA" aggregationKind="NONE" name="">
+      <modelElement href="callCenterApp.uml#_ol8uEUvpEeiDYNBtoVGnnA"/>
+      <visibility xmi:id="_pS2QUUvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pS2QUEvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_pS1CMEvpEeiDYNBtoVGnnA" aggregationKind="NONE" name="isOneSupervisor" navigable="true">
+      <modelElement href="callCenterApp.uml#_ojB88EvpEeiDYNBtoVGnnA"/>
+      <stereotypes xmi:id="_fCKOMEvqEeisQYf6iZKz6A" name="Generics">
+        <modelElement href="callCenterApp.uml#_ojMVAEvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_fCK1QEvqEeisQYf6iZKz6A" name="LegacyStyledElement">
+        <modelElement href="callCenterApp.uml#_ojSboEvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <visibility xmi:id="_pS23YUvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pS23YEvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_pTCdkEvpEeiDYNBtoVGnnA" sourceAnchor="240.0,0.0" targetAnchor="159.0,185.0" superClass="_pPNGcEvpEeiDYNBtoVGnnA" subClass="_pTPR4EvpEeiDYNBtoVGnnA">
+    <modelElement href="callCenterApp.uml#_odGUEEvpEeiDYNBtoVGnnA"/>
+    <bendpoints xmi:id="_qdQRIEvtEeiBI8R8_xXMhw" sourceY="-31" targetX="1324" targetY="132"/>
+    <bendpoints xmi:id="_qdQRIUvtEeiBI8R8_xXMhw" sourceX="-1323" sourceY="-42" targetX="1" targetY="121"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_pTDrsEvpEeiDYNBtoVGnnA" source="_pTPR4EvpEeiDYNBtoVGnnA">
+    <modelElement href="callCenterApp.uml#_omXk0EvpEeiDYNBtoVGnnA"/>
+    <stereotypes xmi:id="_pTKZYEvpEeiDYNBtoVGnnA" name="Reference">
+      <modelElement href="callCenterApp.uml#_omcdUEvpEeiDYNBtoVGnnA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_pTJLQEvpEeiDYNBtoVGnnA" text=""/>
+    <sourceRole xmi:id="_pTJLQUvpEeiDYNBtoVGnnA" aggregationKind="NONE" name="">
+      <modelElement href="callCenterApp.uml#_omXk0UvpEeiDYNBtoVGnnA"/>
+      <visibility xmi:id="_pTLngUvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pTLngEvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_pTJyUEvpEeiDYNBtoVGnnA" aggregationKind="NONE" name="queue" navigable="true">
+      <modelElement href="callCenterApp.uml#_ojpoAEvpEeiDYNBtoVGnnA"/>
+      <stereotypes xmi:id="_fCbT8EvqEeisQYf6iZKz6A" name="Generics">
+        <modelElement href="callCenterApp.uml#_ojt5cEvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_fCb7AEvqEeisQYf6iZKz6A" name="LegacyStyledElement">
+        <modelElement href="callCenterApp.uml#_ojvuoEvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <visibility xmi:id="_pTMOkUvpEeiDYNBtoVGnnA" label="-"/>
+      <cardinality xmi:id="_pTMOkEvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_pTXNsEvpEeiDYNBtoVGnnA" sourceAnchor="214.0,0.0" targetAnchor="159.0,185.0" superClass="_pPNGcEvpEeiDYNBtoVGnnA" subClass="_pTfJgEvpEeiDYNBtoVGnnA">
+    <modelElement href="callCenterApp.uml#_odTvcEvpEeiDYNBtoVGnnA"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_pTYb0EvpEeiDYNBtoVGnnA" source="_pTfJgEvpEeiDYNBtoVGnnA">
+    <modelElement href="callCenterApp.uml#_omij8EvpEeiDYNBtoVGnnA"/>
+    <stereotypes xmi:id="_pTcGMUvpEeiDYNBtoVGnnA" name="Reference">
+      <modelElement href="callCenterApp.uml#_omoDgEvpEeiDYNBtoVGnnA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_pTbfIEvpEeiDYNBtoVGnnA" text=""/>
+    <sourceRole xmi:id="_pTbfIUvpEeiDYNBtoVGnnA" aggregationKind="NONE" name="">
+      <modelElement href="callCenterApp.uml#_omij8UvpEeiDYNBtoVGnnA"/>
+      <visibility xmi:id="_pTctQUvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pTctQEvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_pTcGMEvpEeiDYNBtoVGnnA" aggregationKind="NONE" name="isOneOperator" navigable="true">
+      <modelElement href="callCenterApp.uml#_oj3DYEvpEeiDYNBtoVGnnA"/>
+      <stereotypes xmi:id="_fC08kEvqEeisQYf6iZKz6A" name="Generics">
+        <modelElement href="callCenterApp.uml#_oj6twEvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_fC1joEvqEeisQYf6iZKz6A" name="LegacyStyledElement">
+        <modelElement href="callCenterApp.uml#_oj9xEEvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <visibility xmi:id="_pTdUUUvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pTdUUEvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_pTkpEEvpEeiDYNBtoVGnnA" sourceAnchor="199.0,0.0" targetAnchor="159.0,185.0" superClass="_pPNGcEvpEeiDYNBtoVGnnA" subClass="_pTtL8EvpEeiDYNBtoVGnnA">
+    <modelElement href="callCenterApp.uml#_odNBwEvpEeiDYNBtoVGnnA"/>
+    <bendpoints xmi:id="_qdRfQEvtEeiBI8R8_xXMhw" sourceY="-32" targetX="859" targetY="131"/>
+    <bendpoints xmi:id="_qdSGUEvtEeiBI8R8_xXMhw" sourceX="-858" sourceY="-42" targetX="1" targetY="121"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_pTlQIEvpEeiDYNBtoVGnnA" source="_pTtL8EvpEeiDYNBtoVGnnA">
+    <modelElement href="callCenterApp.uml#_omdEYEvpEeiDYNBtoVGnnA"/>
+    <stereotypes xmi:id="_pTo6gUvpEeiDYNBtoVGnnA" name="Reference">
+      <modelElement href="callCenterApp.uml#_omh84EvpEeiDYNBtoVGnnA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_pTnsYEvpEeiDYNBtoVGnnA" text=""/>
+    <sourceRole xmi:id="_pToTcEvpEeiDYNBtoVGnnA" aggregationKind="NONE" name="">
+      <modelElement href="callCenterApp.uml#_omdEYUvpEeiDYNBtoVGnnA"/>
+      <visibility xmi:id="_pTqIoEvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pTphkEvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_pTo6gEvpEeiDYNBtoVGnnA" aggregationKind="NONE" name="isOneDirector" navigable="true">
+      <modelElement href="callCenterApp.uml#_ojxj0EvpEeiDYNBtoVGnnA"/>
+      <stereotypes xmi:id="_fDN-IEvqEeisQYf6iZKz6A" name="Generics">
+        <modelElement href="callCenterApp.uml#_oj0AEEvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_fDSPkEvqEeisQYf6iZKz6A" name="LegacyStyledElement">
+        <modelElement href="callCenterApp.uml#_oj11QEvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <visibility xmi:id="_pTqvsEvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pTqIoUvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_pTzSkEvpEeiDYNBtoVGnnA" sourceAnchor="156.0,0.0" targetAnchor="89.0,125.0" superClass="_pOJWgEvpEeiDYNBtoVGnnA" subClass="_pT6nUEvpEeiDYNBtoVGnnA">
+    <modelElement href="callCenterApp.uml#_oe1ZcEvpEeiDYNBtoVGnnA"/>
+    <bendpoints xmi:id="_qdVJoEvtEeiBI8R8_xXMhw" sourceY="-31" targetX="156" targetY="110"/>
+    <bendpoints xmi:id="_qdVwsEvtEeiBI8R8_xXMhw" sourceX="-155" sourceY="-40" targetX="1" targetY="101"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_pTz5oEvpEeiDYNBtoVGnnA" sourceAnchor="207.0,0.0" targetAnchor="91.0,76.0" dashed="true" superClass="_pUICsEvpEeiDYNBtoVGnnA" subClass="_pT6nUEvpEeiDYNBtoVGnnA">
+    <modelElement href="callCenterApp.uml#_oes2kEvpEeiDYNBtoVGnnA"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_fEGH4EvqEeisQYf6iZKz6A" dashed="true" subClass="_pOZ1MEvpEeiDYNBtoVGnnA">
+    <modelElement href="callCenterApp.uml#_ogPHoEvpEeiDYNBtoVGnnA"/>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pN1NcEvpEeiDYNBtoVGnnA" sourceConnectionVisual="_pN10gEvpEeiDYNBtoVGnnA" text="Hello world!&#xA; *" item="_pN3CoEvpEeiDYNBtoVGnnA">
+    <modelElement href="callCenterApp.uml#_olFLYEvpEeiDYNBtoVGnnA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pQh8IEvpEeiDYNBtoVGnnA" sourceConnectionVisual="_pQh8IUvpEeiDYNBtoVGnnA" text=" This dispatcher managers all concurrent request of the dispatchCall&#xA; *&#xA; *" item="_pRQU4EvpEeiDYNBtoVGnnA">
+    <modelElement href="callCenterApp.uml#_olHnoEvpEeiDYNBtoVGnnA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pQkYYEvpEeiDYNBtoVGnnA" sourceConnectionVisual="_pQk_cEvpEeiDYNBtoVGnnA" text=" This method has a loop that gets a caller from queue and assigns an agent in order to&#xA;&#x9; *  attend this caller. Steps:&#xA;&#x9; *  1. Lock code block&#xA;&#x9; *  2. The process gets a caller from queue.&#xA;&#x9; *  3. Get a idle receivers list, in order to get all receivers are not busy in&#xA;&#x9; *     that instance.&#xA;&#x9; *  4. Try to get an operator agent, if there is not an operator then try to get&#xA;&#x9; *     a supervisor agent, if there is not a supervisor then try to get a director agent,&#xA;&#x9; *     else put on queue through of the AgentQueue.&#xA;&#x9; *  5. Unlock the code block" item="_pRUmVkvpEeiDYNBtoVGnnA">
+    <modelElement href="callCenterApp.uml#_olIOsUvpEeiDYNBtoVGnnA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pQmNkEvpEeiDYNBtoVGnnA" sourceConnectionVisual="_pQmNkUvpEeiDYNBtoVGnnA" text=" In this constructor all variables are initialized&#xA;&#x9; *&#xA;&#x9; * @param config" item="_pRUmWUvpEeiDYNBtoVGnnA">
+    <modelElement href="callCenterApp.uml#_olHnoUvpEeiDYNBtoVGnnA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_pQnbsEvpEeiDYNBtoVGnnA" sourceConnectionVisual="_pQpQ4EvpEeiDYNBtoVGnnA" text="Get all request an on queue them.&#xA;&#x9; *&#xA;&#x9; * This method places a caller on the concurrent queue and if the process is not running then&#xA;&#x9; * invokes the loopCallCenter method in order to start the process&#xA;&#x9; * @param caller This is a Caller object" item="_pRUmYkvpEeiDYNBtoVGnnA">
+    <modelElement href="callCenterApp.uml#_olIOsEvpEeiDYNBtoVGnnA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_pN3CoEvpEeiDYNBtoVGnnA" comments="_pN1NcEvpEeiDYNBtoVGnnA" targetConnectionVisual="_pN10gEvpEeiDYNBtoVGnnA" name="App">
+    <modelElement href="callCenterApp.uml#_nx9FUEvpEeiDYNBtoVGnnA"/>
+    <visualProperties xmi:id="_pN3CoUvpEeiDYNBtoVGnnA" position="325.0,-9.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_pN3psEvpEeiDYNBtoVGnnA" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_pTPR4EvpEeiDYNBtoVGnnA" name="AgentQueue" associationsOut="_pTDrsEvpEeiDYNBtoVGnnA" generalizations="_pTCdkEvpEeiDYNBtoVGnnA">
+    <modelElement href="callCenterApp.uml#_n78HwEvpEeiDYNBtoVGnnA"/>
+    <visualProperties xmi:id="_pTPR4UvpEeiDYNBtoVGnnA" position="-468.0,417.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_pTPR4kvpEeiDYNBtoVGnnA" label="+"/>
+    <attributes xmi:id="_pTPR40vpEeiDYNBtoVGnnA" name="queue">
+      <modelElement href="callCenterApp.uml#_ojpoAEvpEeiDYNBtoVGnnA"/>
+      <stereotypes xmi:id="_fTMT0EvqEeisQYf6iZKz6A" name="Generics"/>
+      <stereotypes xmi:id="_fTOJAEvqEeisQYf6iZKz6A" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_fTVdwEvqEeisQYf6iZKz6A" name="Generics"/>
+      <stereotypes xmi:id="_fTWr4EvqEeisQYf6iZKz6A" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_fWLWYEvqEeisQYf6iZKz6A" name="Generics"/>
+      <stereotypes xmi:id="_fWNyoEvqEeisQYf6iZKz6A" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_c2dEQEvtEeiBI8R8_xXMhw" name="Generics"/>
+      <stereotypes xmi:id="_c2drUEvtEeiBI8R8_xXMhw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_c2e5cEvtEeiBI8R8_xXMhw" name="Generics"/>
+      <stereotypes xmi:id="_c2fggEvtEeiBI8R8_xXMhw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_c2sU0EvtEeiBI8R8_xXMhw" name="Generics"/>
+      <stereotypes xmi:id="_c2ti8EvtEeiBI8R8_xXMhw" name="LegacyStyledElement"/>
+      <visibility xmi:id="_pTPR5kvpEeiDYNBtoVGnnA" label="-"/>
+      <cardinality xmi:id="_pTPR50vpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <type xmi:id="_pTPR6EvpEeiDYNBtoVGnnA" name="ConcurrentLinkedQueue">
+        <modelElement href="callCenterApp.uml#_oc4RoEvpEeiDYNBtoVGnnA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_pTPR6UvpEeiDYNBtoVGnnA" name="answer">
+      <modelElement href="callCenterApp.uml#_odANcEvpEeiDYNBtoVGnnA"/>
+      <stereotypes xmi:id="_pTP48EvpEeiDYNBtoVGnnA" name="LegacyStyledElement">
+        <modelElement href="callCenterApp.uml#_odDQwEvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pTP48UvpEeiDYNBtoVGnnA" name="Annotations">
+        <modelElement href="callCenterApp.uml#_odEe4EvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <visibility xmi:id="_pTP48kvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pTP480vpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_pTP49EvpEeiDYNBtoVGnnA">
+        <modelElement href="callCenterApp.uml#_ohBKwEvpEeiDYNBtoVGnnA"/>
+        <type xmi:id="_pTP49UvpEeiDYNBtoVGnnA" name="Runnable">
+          <modelElement href="callCenterApp.uml#_of9a0EvpEeiDYNBtoVGnnA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_pTP49kvpEeiDYNBtoVGnnA" name="caller">
+        <modelElement href="callCenterApp.uml#_odA0gEvpEeiDYNBtoVGnnA"/>
+        <cardinality xmi:id="_pTP490vpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+        <type xmi:id="_pTP4-EvpEeiDYNBtoVGnnA" name="Caller">
+          <modelElement href="callCenterApp.uml#_n-yncEvpEeiDYNBtoVGnnA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pTP4-UvpEeiDYNBtoVGnnA" name="AgentQueue">
+      <modelElement href="callCenterApp.uml#_ogqlcEvpEeiDYNBtoVGnnA"/>
+      <keywords xmi:id="_pTP4-kvpEeiDYNBtoVGnnA" keyword="create"/>
+      <visibility xmi:id="_pTP4-0vpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pTP4_EvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_pTP4_UvpEeiDYNBtoVGnnA">
+        <modelElement href="callCenterApp.uml#_og1kkkvpEeiDYNBtoVGnnA"/>
+        <type xmi:id="_pTP4_kvpEeiDYNBtoVGnnA" name="AgentQueue">
+          <modelElement href="callCenterApp.uml#_n78HwEvpEeiDYNBtoVGnnA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_pTP4_0vpEeiDYNBtoVGnnA" name="queue">
+        <modelElement href="callCenterApp.uml#_og0WcEvpEeiDYNBtoVGnnA"/>
+        <cardinality xmi:id="_pTP5AEvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+        <type xmi:id="_pTP5AUvpEeiDYNBtoVGnnA" name="ConcurrentLinkedQueue">
+          <modelElement href="callCenterApp.uml#_oc4RoEvpEeiDYNBtoVGnnA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_pTtL8EvpEeiDYNBtoVGnnA" name="Director" associationsOut="_pTlQIEvpEeiDYNBtoVGnnA" generalizations="_pTkpEEvpEeiDYNBtoVGnnA">
+    <modelElement href="callCenterApp.uml#_n8SGAEvpEeiDYNBtoVGnnA"/>
+    <visualProperties xmi:id="_pTtL8UvpEeiDYNBtoVGnnA" position="-892.0,418.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_pTtL8kvpEeiDYNBtoVGnnA" label="+"/>
+    <attributes xmi:id="_pTtL80vpEeiDYNBtoVGnnA" defaultValue="r -> r instanceof Director" name="isOneDirector" staticAttribute="true">
+      <modelElement href="callCenterApp.uml#_ojxj0EvpEeiDYNBtoVGnnA"/>
+      <stereotypes xmi:id="_fUWKYEvqEeisQYf6iZKz6A" name="Generics"/>
+      <stereotypes xmi:id="_fUXYgEvqEeisQYf6iZKz6A" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_fUab0EvqEeisQYf6iZKz6A" name="Generics"/>
+      <stereotypes xmi:id="_fUbp8EvqEeisQYf6iZKz6A" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_fWk_AEvqEeisQYf6iZKz6A" name="Generics"/>
+      <stereotypes xmi:id="_fWuwAEvqEeisQYf6iZKz6A" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_c2lAEEvtEeiBI8R8_xXMhw" name="Generics"/>
+      <stereotypes xmi:id="_c2mOMEvtEeiBI8R8_xXMhw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_c2oqcEvtEeiBI8R8_xXMhw" name="Generics"/>
+      <stereotypes xmi:id="_c2p4kEvtEeiBI8R8_xXMhw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_c2uxEEvtEeiBI8R8_xXMhw" name="Generics"/>
+      <stereotypes xmi:id="_c2v_MEvtEeiBI8R8_xXMhw" name="LegacyStyledElement"/>
+      <visibility xmi:id="_pTtL9kvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pTtL90vpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <type xmi:id="_pTtL-EvpEeiDYNBtoVGnnA" name="Predicate">
+        <modelElement href="callCenterApp.uml#_oaZlYEvpEeiDYNBtoVGnnA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_pTtL-UvpEeiDYNBtoVGnnA" name="Director">
+      <modelElement href="callCenterApp.uml#_n8ZawEvpEeiDYNBtoVGnnA"/>
+      <keywords xmi:id="_pTtL-kvpEeiDYNBtoVGnnA" keyword="create"/>
+      <visibility xmi:id="_pTtL-0vpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pTtL_EvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_pTtL_UvpEeiDYNBtoVGnnA">
+        <modelElement href="callCenterApp.uml#_n8ceEEvpEeiDYNBtoVGnnA"/>
+        <type xmi:id="_pTtL_kvpEeiDYNBtoVGnnA" name="Director">
+          <modelElement href="callCenterApp.uml#_n8SGAEvpEeiDYNBtoVGnnA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_pTtL_0vpEeiDYNBtoVGnnA" name="name">
+        <modelElement href="callCenterApp.uml#_n8aB0EvpEeiDYNBtoVGnnA"/>
+        <cardinality xmi:id="_pTtMAEvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+        <type xmi:id="_pTtMAUvpEeiDYNBtoVGnnA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_pS6hwEvpEeiDYNBtoVGnnA" name="Supervisor" associationsOut="_pSwJsEvpEeiDYNBtoVGnnA" generalizations="_pSu7kEvpEeiDYNBtoVGnnA">
+    <modelElement href="callCenterApp.uml#_n6FGkEvpEeiDYNBtoVGnnA"/>
+    <visualProperties xmi:id="_pS6hwUvpEeiDYNBtoVGnnA" position="-1328.0,417.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_pS6hwkvpEeiDYNBtoVGnnA" label="+"/>
+    <attributes xmi:id="_pS6hw0vpEeiDYNBtoVGnnA" defaultValue="r -> r instanceof Supervisor" name="isOneSupervisor" staticAttribute="true">
+      <modelElement href="callCenterApp.uml#_ojB88EvpEeiDYNBtoVGnnA"/>
+      <stereotypes xmi:id="_fSjaoEvqEeisQYf6iZKz6A" name="Generics"/>
+      <stereotypes xmi:id="_fS5Y4EvqEeisQYf6iZKz6A" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_fTBUsEvqEeisQYf6iZKz6A" name="Generics"/>
+      <stereotypes xmi:id="_fTHbUEvqEeisQYf6iZKz6A" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_fWCzgEvqEeisQYf6iZKz6A" name="Generics"/>
+      <stereotypes xmi:id="_fWF20EvqEeisQYf6iZKz6A" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_c2YLwEvtEeiBI8R8_xXMhw" name="Generics"/>
+      <stereotypes xmi:id="_c2Yy0EvtEeiBI8R8_xXMhw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_c2aoAEvtEeiBI8R8_xXMhw" name="Generics"/>
+      <stereotypes xmi:id="_c2bPEEvtEeiBI8R8_xXMhw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_c2x0YEvtEeiBI8R8_xXMhw" name="Generics"/>
+      <stereotypes xmi:id="_c2ybcEvtEeiBI8R8_xXMhw" name="LegacyStyledElement"/>
+      <visibility xmi:id="_pS6hxkvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pS6hx0vpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <type xmi:id="_pS6hyEvpEeiDYNBtoVGnnA" name="Predicate">
+        <modelElement href="callCenterApp.uml#_oaZlYEvpEeiDYNBtoVGnnA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_pS6hyUvpEeiDYNBtoVGnnA" name="Supervisor">
+      <modelElement href="callCenterApp.uml#_n6YokEvpEeiDYNBtoVGnnA"/>
+      <keywords xmi:id="_pS6hykvpEeiDYNBtoVGnnA" keyword="create"/>
+      <visibility xmi:id="_pS6hy0vpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pS6hzEvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_pS6hzUvpEeiDYNBtoVGnnA">
+        <modelElement href="callCenterApp.uml#_n6bE0UvpEeiDYNBtoVGnnA"/>
+        <type xmi:id="_pS6hzkvpEeiDYNBtoVGnnA" name="Supervisor">
+          <modelElement href="callCenterApp.uml#_n6FGkEvpEeiDYNBtoVGnnA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_pS6hz0vpEeiDYNBtoVGnnA" name="name">
+        <modelElement href="callCenterApp.uml#_n6ZPoEvpEeiDYNBtoVGnnA"/>
+        <cardinality xmi:id="_pS6h0EvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+        <type xmi:id="_pS6h0UvpEeiDYNBtoVGnnA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_pRQU4EvpEeiDYNBtoVGnnA" comments="_pQh8IEvpEeiDYNBtoVGnnA" targetConnectionVisual="_pQh8IUvpEeiDYNBtoVGnnA" name="Dispatcher" associationsOut="_pQdqsEvpEeiDYNBtoVGnnA _pRHyAEvpEeiDYNBtoVGnnA _pRLcYEvpEeiDYNBtoVGnnA _pRPt0EvpEeiDYNBtoVGnnA">
+    <modelElement href="callCenterApp.uml#_n9AewEvpEeiDYNBtoVGnnA"/>
+    <visualProperties xmi:id="_pRQU4UvpEeiDYNBtoVGnnA" position="-462.0,151.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_pRQU4kvpEeiDYNBtoVGnnA" label="+"/>
+    <attributes xmi:id="_pRQU40vpEeiDYNBtoVGnnA" name="executor">
+      <modelElement href="callCenterApp.uml#_oj-_MEvpEeiDYNBtoVGnnA"/>
+      <visibility xmi:id="_pRQU5EvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pRQU5UvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <type xmi:id="_pRQU5kvpEeiDYNBtoVGnnA" name="ExecutorService">
+        <modelElement href="callCenterApp.uml#_odri4EvpEeiDYNBtoVGnnA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pRT_QEvpEeiDYNBtoVGnnA" name="receivers">
+      <modelElement href="callCenterApp.uml#_okANUEvpEeiDYNBtoVGnnA"/>
+      <visibility xmi:id="_pRT_QUvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pRT_QkvpEeiDYNBtoVGnnA" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_pRT_Q0vpEeiDYNBtoVGnnA" name="Agent">
+        <modelElement href="callCenterApp.uml#_nyFoMEvpEeiDYNBtoVGnnA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pRT_REvpEeiDYNBtoVGnnA" name="queueCallers">
+      <modelElement href="callCenterApp.uml#_okCCgEvpEeiDYNBtoVGnnA"/>
+      <stereotypes xmi:id="_fPeRcEvqEeisQYf6iZKz6A" name="Generics"/>
+      <stereotypes xmi:id="_fPffkEvqEeisQYf6iZKz6A" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_fPnbYEvqEeisQYf6iZKz6A" name="Generics"/>
+      <stereotypes xmi:id="_fPs68EvqEeisQYf6iZKz6A" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_fVc9oEvqEeisQYf6iZKz6A" name="Generics"/>
+      <stereotypes xmi:id="_fVh2IEvqEeisQYf6iZKz6A" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_c2C0kEvtEeiBI8R8_xXMhw" name="Generics"/>
+      <stereotypes xmi:id="_c2DboEvtEeiBI8R8_xXMhw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_c2F34EvtEeiBI8R8_xXMhw" name="Generics"/>
+      <stereotypes xmi:id="_c2HGAEvtEeiBI8R8_xXMhw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_c203sEvtEeiBI8R8_xXMhw" name="Generics"/>
+      <stereotypes xmi:id="_c21ewEvtEeiBI8R8_xXMhw" name="LegacyStyledElement"/>
+      <visibility xmi:id="_pRT_R0vpEeiDYNBtoVGnnA" label="-"/>
+      <cardinality xmi:id="_pRT_SEvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <type xmi:id="_pRT_SUvpEeiDYNBtoVGnnA" name="ConcurrentLinkedQueue">
+        <modelElement href="callCenterApp.uml#_oc4RoEvpEeiDYNBtoVGnnA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pRT_SkvpEeiDYNBtoVGnnA" name="lock">
+      <modelElement href="callCenterApp.uml#_okLMcEvpEeiDYNBtoVGnnA"/>
+      <stereotypes xmi:id="_fPv-QEvqEeisQYf6iZKz6A" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_fP2r8EvqEeisQYf6iZKz6A" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_fVrAEEvqEeisQYf6iZKz6A" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_c2I7MEvtEeiBI8R8_xXMhw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_c2KJUEvtEeiBI8R8_xXMhw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_c22s4EvtEeiBI8R8_xXMhw" name="LegacyStyledElement"/>
+      <visibility xmi:id="_pRT_TEvpEeiDYNBtoVGnnA" label="-"/>
+      <cardinality xmi:id="_pRT_TUvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <type xmi:id="_pRUmUEvpEeiDYNBtoVGnnA" name="ReentrantLock">
+        <modelElement href="callCenterApp.uml#_od9PsEvpEeiDYNBtoVGnnA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pRUmUUvpEeiDYNBtoVGnnA" name="running">
+      <modelElement href="callCenterApp.uml#_okOPwEvpEeiDYNBtoVGnnA"/>
+      <stereotypes xmi:id="_pRUmUkvpEeiDYNBtoVGnnA" name="LegacyStyledElement">
+        <modelElement href="callCenterApp.uml#_okR6IEvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <visibility xmi:id="_pRUmU0vpEeiDYNBtoVGnnA" label="-"/>
+      <cardinality xmi:id="_pRUmVEvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <type xmi:id="_pRUmVUvpEeiDYNBtoVGnnA" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_pRUmVkvpEeiDYNBtoVGnnA" comments="_pQkYYEvpEeiDYNBtoVGnnA" targetConnectionVisual="_pQk_cEvpEeiDYNBtoVGnnA" name="loopCallCenter">
+      <modelElement href="callCenterApp.uml#_n96dsEvpEeiDYNBtoVGnnA"/>
+      <visibility xmi:id="_pRUmV0vpEeiDYNBtoVGnnA" label="-"/>
+      <cardinality xmi:id="_pRUmWEvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_pRUmWUvpEeiDYNBtoVGnnA" comments="_pQmNkEvpEeiDYNBtoVGnnA" targetConnectionVisual="_pQmNkUvpEeiDYNBtoVGnnA" name="Dispatcher">
+      <modelElement href="callCenterApp.uml#_oeR_0EvpEeiDYNBtoVGnnA"/>
+      <keywords xmi:id="_pRUmWkvpEeiDYNBtoVGnnA" keyword="create"/>
+      <visibility xmi:id="_pRUmW0vpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pRUmXEvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_pRUmXUvpEeiDYNBtoVGnnA">
+        <modelElement href="callCenterApp.uml#_oebJwEvpEeiDYNBtoVGnnA"/>
+        <type xmi:id="_pRUmXkvpEeiDYNBtoVGnnA" name="Dispatcher">
+          <modelElement href="callCenterApp.uml#_n9AewEvpEeiDYNBtoVGnnA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_pRUmX0vpEeiDYNBtoVGnnA" name="config">
+        <modelElement href="callCenterApp.uml#_oeR_0UvpEeiDYNBtoVGnnA"/>
+        <cardinality xmi:id="_pRUmYEvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+        <type xmi:id="_pRUmYUvpEeiDYNBtoVGnnA" name="Config">
+          <modelElement href="callCenterApp.uml#_n4XPUEvpEeiDYNBtoVGnnA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pRUmYkvpEeiDYNBtoVGnnA" comments="_pQnbsEvpEeiDYNBtoVGnnA" targetConnectionVisual="_pQpQ4EvpEeiDYNBtoVGnnA" name="dispatchCall">
+      <modelElement href="callCenterApp.uml#_oecX4EvpEeiDYNBtoVGnnA"/>
+      <visibility xmi:id="_pRUmY0vpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pRUmZEvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_pRUmZUvpEeiDYNBtoVGnnA" name="caller">
+        <modelElement href="callCenterApp.uml#_oec-8EvpEeiDYNBtoVGnnA"/>
+        <cardinality xmi:id="_pRUmZkvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+        <type xmi:id="_pRUmZ0vpEeiDYNBtoVGnnA" name="Sender">
+          <modelElement href="callCenterApp.uml#_oBJX4EvpEeiDYNBtoVGnnA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_pT6nUEvpEeiDYNBtoVGnnA" name="Caller" associationsIn="_pR6cMEvpEeiDYNBtoVGnnA" generalizations="_pTzSkEvpEeiDYNBtoVGnnA _pTz5oEvpEeiDYNBtoVGnnA">
+    <modelElement href="callCenterApp.uml#_n-yncEvpEeiDYNBtoVGnnA"/>
+    <visualProperties xmi:id="_pT6nUUvpEeiDYNBtoVGnnA" position="-1332.0,69.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_pT6nUkvpEeiDYNBtoVGnnA" label="+"/>
+    <attributes xmi:id="_pT6nU0vpEeiDYNBtoVGnnA" defaultValue="false" name="attended">
+      <modelElement href="callCenterApp.uml#_okTvUEvpEeiDYNBtoVGnnA"/>
+      <stereotypes xmi:id="_pT6nVEvpEeiDYNBtoVGnnA" name="LegacyStyledElement">
+        <modelElement href="callCenterApp.uml#_okVkgEvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <visibility xmi:id="_pT6nVUvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pT7OYEvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <type xmi:id="_pT7OYUvpEeiDYNBtoVGnnA" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_pT7OYkvpEeiDYNBtoVGnnA" name="Caller">
+      <modelElement href="callCenterApp.uml#_n_GJcEvpEeiDYNBtoVGnnA"/>
+      <keywords xmi:id="_pT7OY0vpEeiDYNBtoVGnnA" keyword="create"/>
+      <visibility xmi:id="_pT7OZEvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pT7OZUvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_pT7OZkvpEeiDYNBtoVGnnA">
+        <modelElement href="callCenterApp.uml#_n_P6cEvpEeiDYNBtoVGnnA"/>
+        <type xmi:id="_pT7OZ0vpEeiDYNBtoVGnnA" name="Caller">
+          <modelElement href="callCenterApp.uml#_n-yncEvpEeiDYNBtoVGnnA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_pT7OaEvpEeiDYNBtoVGnnA" name="name">
+        <modelElement href="callCenterApp.uml#_n_GwgEvpEeiDYNBtoVGnnA"/>
+        <cardinality xmi:id="_pT7OaUvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+        <type xmi:id="_pT7OakvpEeiDYNBtoVGnnA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pT7Oa0vpEeiDYNBtoVGnnA" name="isAttended">
+      <modelElement href="callCenterApp.uml#_n_SWsEvpEeiDYNBtoVGnnA"/>
+      <stereotypes xmi:id="_pT7ObEvpEeiDYNBtoVGnnA" name="LegacyStyledElement">
+        <modelElement href="callCenterApp.uml#_n_cHsEvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pT7ObUvpEeiDYNBtoVGnnA" name="Annotations">
+        <modelElement href="callCenterApp.uml#_n_ej8EvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <visibility xmi:id="_pT7ObkvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pT7Ob0vpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_pT7OcEvpEeiDYNBtoVGnnA">
+        <modelElement href="callCenterApp.uml#_n_Uy8EvpEeiDYNBtoVGnnA"/>
+        <type xmi:id="_pT7OcUvpEeiDYNBtoVGnnA" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_pT7OckvpEeiDYNBtoVGnnA" name="setAttended">
+      <modelElement href="callCenterApp.uml#_n_gZIEvpEeiDYNBtoVGnnA"/>
+      <stereotypes xmi:id="_pT7Oc0vpEeiDYNBtoVGnnA" name="LegacyStyledElement">
+        <modelElement href="callCenterApp.uml#_n_vCoEvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pT7OdEvpEeiDYNBtoVGnnA" name="Annotations">
+        <modelElement href="callCenterApp.uml#_n_6BwEvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <visibility xmi:id="_pT7OdUvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pT7OdkvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_pT7Od0vpEeiDYNBtoVGnnA" name="attended">
+        <modelElement href="callCenterApp.uml#_n_hAMEvpEeiDYNBtoVGnnA"/>
+        <cardinality xmi:id="_pT7OeEvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+        <type xmi:id="_pT7OeUvpEeiDYNBtoVGnnA" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pT7OekvpEeiDYNBtoVGnnA" name="toString">
+      <modelElement href="callCenterApp.uml#_n_7P4EvpEeiDYNBtoVGnnA"/>
+      <stereotypes xmi:id="_pT7Oe0vpEeiDYNBtoVGnnA" name="LegacyStyledElement">
+        <modelElement href="callCenterApp.uml#_oAHdIEvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pT7OfEvpEeiDYNBtoVGnnA" name="Annotations">
+        <modelElement href="callCenterApp.uml#_oAJSUEvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <visibility xmi:id="_pT7OfUvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pT7OfkvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_pT7Of0vpEeiDYNBtoVGnnA">
+        <modelElement href="callCenterApp.uml#_n_-6QEvpEeiDYNBtoVGnnA"/>
+        <type xmi:id="_pT7OgEvpEeiDYNBtoVGnnA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_pP8GQEvpEeiDYNBtoVGnnA" name="Config">
+    <modelElement href="callCenterApp.uml#_n4XPUEvpEeiDYNBtoVGnnA"/>
+    <visualProperties xmi:id="_pP8GQUvpEeiDYNBtoVGnnA" position="-432.0,-145.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_pP8GQkvpEeiDYNBtoVGnnA" label="+"/>
+    <attributes xmi:id="_pP8GQ0vpEeiDYNBtoVGnnA" defaultValue="0" name="nThreads">
+      <modelElement href="callCenterApp.uml#_oivCAEvpEeiDYNBtoVGnnA"/>
+      <stereotypes xmi:id="_pP8GREvpEeiDYNBtoVGnnA" name="LegacyStyledElement">
+        <modelElement href="callCenterApp.uml#_oizTcEvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <visibility xmi:id="_pP8GRUvpEeiDYNBtoVGnnA" label="-"/>
+      <cardinality xmi:id="_pP8GRkvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <type xmi:id="_pP8GR0vpEeiDYNBtoVGnnA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pP8GSEvpEeiDYNBtoVGnnA" defaultValue="0" name="nOperators">
+      <modelElement href="callCenterApp.uml#_oiz6gEvpEeiDYNBtoVGnnA"/>
+      <stereotypes xmi:id="_pP8GSUvpEeiDYNBtoVGnnA" name="LegacyStyledElement">
+        <modelElement href="callCenterApp.uml#_oi290EvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <visibility xmi:id="_pP8GSkvpEeiDYNBtoVGnnA" label="-"/>
+      <cardinality xmi:id="_pP8GS0vpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <type xmi:id="_pP8GTEvpEeiDYNBtoVGnnA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pP8GTUvpEeiDYNBtoVGnnA" defaultValue="0" name="nSupervisor">
+      <modelElement href="callCenterApp.uml#_oi4L8EvpEeiDYNBtoVGnnA"/>
+      <stereotypes xmi:id="_pP8GTkvpEeiDYNBtoVGnnA" name="LegacyStyledElement">
+        <modelElement href="callCenterApp.uml#_oi6oMEvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <visibility xmi:id="_pP8GT0vpEeiDYNBtoVGnnA" label="-"/>
+      <cardinality xmi:id="_pP8GUEvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <type xmi:id="_pP8GUUvpEeiDYNBtoVGnnA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pP8GUkvpEeiDYNBtoVGnnA" defaultValue="0" name="nDirectors">
+      <modelElement href="callCenterApp.uml#_oi9EcEvpEeiDYNBtoVGnnA"/>
+      <stereotypes xmi:id="_pP8GU0vpEeiDYNBtoVGnnA" name="LegacyStyledElement">
+        <modelElement href="callCenterApp.uml#_ojAHwEvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <visibility xmi:id="_pP8GVEvpEeiDYNBtoVGnnA" label="-"/>
+      <cardinality xmi:id="_pP8GVUvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <type xmi:id="_pP8GVkvpEeiDYNBtoVGnnA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_pP8GV0vpEeiDYNBtoVGnnA" name="getnThreads">
+      <modelElement href="callCenterApp.uml#_n4zUMEvpEeiDYNBtoVGnnA"/>
+      <visibility xmi:id="_pP8GWEvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pP8GWUvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_pP8GWkvpEeiDYNBtoVGnnA">
+        <modelElement href="callCenterApp.uml#_n45a0EvpEeiDYNBtoVGnnA"/>
+        <type xmi:id="_pP8GW0vpEeiDYNBtoVGnnA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_pP8GXEvpEeiDYNBtoVGnnA" name="setnThreads">
+      <modelElement href="callCenterApp.uml#_n5FBAEvpEeiDYNBtoVGnnA"/>
+      <visibility xmi:id="_pP8GXUvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pP8GXkvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_pP8GX0vpEeiDYNBtoVGnnA" name="nThreads">
+        <modelElement href="callCenterApp.uml#_n5GPIEvpEeiDYNBtoVGnnA"/>
+        <cardinality xmi:id="_pP8GYEvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+        <type xmi:id="_pP8GYUvpEeiDYNBtoVGnnA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pP8GYkvpEeiDYNBtoVGnnA" name="getnOperators">
+      <modelElement href="callCenterApp.uml#_n5J5gEvpEeiDYNBtoVGnnA"/>
+      <visibility xmi:id="_pP8GY0vpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pP8GZEvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_pP8GZUvpEeiDYNBtoVGnnA">
+        <modelElement href="callCenterApp.uml#_n5ScYEvpEeiDYNBtoVGnnA"/>
+        <type xmi:id="_pP8GZkvpEeiDYNBtoVGnnA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_pP8GZ0vpEeiDYNBtoVGnnA" name="setnOperators">
+      <modelElement href="callCenterApp.uml#_n5U4oEvpEeiDYNBtoVGnnA"/>
+      <visibility xmi:id="_pP8GaEvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pP8GaUvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_pP8GakvpEeiDYNBtoVGnnA" name="nOperators">
+        <modelElement href="callCenterApp.uml#_n5WGwEvpEeiDYNBtoVGnnA"/>
+        <cardinality xmi:id="_pP8Ga0vpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+        <type xmi:id="_pP8GbEvpEeiDYNBtoVGnnA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pP8tUEvpEeiDYNBtoVGnnA" name="getnSupervisor">
+      <modelElement href="callCenterApp.uml#_n5ge0EvpEeiDYNBtoVGnnA"/>
+      <visibility xmi:id="_pP8tUUvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pP8tUkvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_pP8tU0vpEeiDYNBtoVGnnA">
+        <modelElement href="callCenterApp.uml#_n5iUAEvpEeiDYNBtoVGnnA"/>
+        <type xmi:id="_pP8tVEvpEeiDYNBtoVGnnA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_pP8tVUvpEeiDYNBtoVGnnA" name="setnSupervisor">
+      <modelElement href="callCenterApp.uml#_n5l-YEvpEeiDYNBtoVGnnA"/>
+      <visibility xmi:id="_pP8tVkvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pP8tV0vpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_pP8tWEvpEeiDYNBtoVGnnA" name="nSupervisor">
+        <modelElement href="callCenterApp.uml#_n5mlcEvpEeiDYNBtoVGnnA"/>
+        <cardinality xmi:id="_pP8tWUvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+        <type xmi:id="_pP8tWkvpEeiDYNBtoVGnnA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pP8tW0vpEeiDYNBtoVGnnA" name="getnDirectors">
+      <modelElement href="callCenterApp.uml#_n5pBsEvpEeiDYNBtoVGnnA"/>
+      <visibility xmi:id="_pP8tXEvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pP8tXUvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_pP8tXkvpEeiDYNBtoVGnnA">
+        <modelElement href="callCenterApp.uml#_n5q24EvpEeiDYNBtoVGnnA"/>
+        <type xmi:id="_pP8tX0vpEeiDYNBtoVGnnA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_pP8tYEvpEeiDYNBtoVGnnA" name="setnDirectors">
+      <modelElement href="callCenterApp.uml#_n5vvYEvpEeiDYNBtoVGnnA"/>
+      <visibility xmi:id="_pP8tYUvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pP8tYkvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_pP8tY0vpEeiDYNBtoVGnnA" name="nDirectors">
+        <modelElement href="callCenterApp.uml#_n5wWcEvpEeiDYNBtoVGnnA"/>
+        <cardinality xmi:id="_pP8tZEvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+        <type xmi:id="_pP8tZUvpEeiDYNBtoVGnnA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_pPNGcEvpEeiDYNBtoVGnnA" name="Agent" abstractClass="true" associationsIn="_pQdqsEvpEeiDYNBtoVGnnA _pR3Y4EvpEeiDYNBtoVGnnA" associationsOut="_pOqT4EvpEeiDYNBtoVGnnA _pPCuYEvpEeiDYNBtoVGnnA" generalizations="_pOoesEvpEeiDYNBtoVGnnA _pOpFwEvpEeiDYNBtoVGnnA" subclassedBy="_pSu7kEvpEeiDYNBtoVGnnA _pTCdkEvpEeiDYNBtoVGnnA _pTXNsEvpEeiDYNBtoVGnnA _pTkpEEvpEeiDYNBtoVGnnA">
+    <modelElement href="callCenterApp.uml#_nyFoMEvpEeiDYNBtoVGnnA"/>
+    <visualProperties xmi:id="_pPNGcUvpEeiDYNBtoVGnnA" position="-1711.0,68.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_pPNGckvpEeiDYNBtoVGnnA" label="+"/>
+    <attributes xmi:id="_pPNGc0vpEeiDYNBtoVGnnA" defaultValue="Receiver::isBusy" name="isBusy" staticAttribute="true">
+      <modelElement href="callCenterApp.uml#_ohV64EvpEeiDYNBtoVGnnA"/>
+      <stereotypes xmi:id="_fOnV0EvqEeisQYf6iZKz6A" name="Generics"/>
+      <stereotypes xmi:id="_fOsOUEvqEeisQYf6iZKz6A" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_fO8F8EvqEeisQYf6iZKz6A" name="Generics"/>
+      <stereotypes xmi:id="_fPDasEvqEeisQYf6iZKz6A" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_fUhwkEvqEeisQYf6iZKz6A" name="Generics"/>
+      <stereotypes xmi:id="_fUqTcEvqEeisQYf6iZKz6A" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_c164wEvtEeiBI8R8_xXMhw" name="Generics"/>
+      <stereotypes xmi:id="_c18G4EvtEeiBI8R8_xXMhw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_c1-jIEvtEeiBI8R8_xXMhw" name="Generics"/>
+      <stereotypes xmi:id="_c1_KMEvtEeiBI8R8_xXMhw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_c25wMEvtEeiBI8R8_xXMhw" name="Generics"/>
+      <stereotypes xmi:id="_c26XQEvtEeiBI8R8_xXMhw" name="LegacyStyledElement"/>
+      <visibility xmi:id="_pPNGdkvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pPNGd0vpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <type xmi:id="_pPNGeEvpEeiDYNBtoVGnnA" name="Predicate">
+        <modelElement href="callCenterApp.uml#_oaZlYEvpEeiDYNBtoVGnnA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pPNtgEvpEeiDYNBtoVGnnA" defaultValue="new ArrayList&lt;Sender>()" name="senderAttended">
+      <modelElement href="callCenterApp.uml#_oh8-4EvpEeiDYNBtoVGnnA"/>
+      <stereotypes xmi:id="_fObvoEvqEeisQYf6iZKz6A" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_fOfaAEvqEeisQYf6iZKz6A" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_fUvzAEvqEeisQYf6iZKz6A" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_c10yIEvtEeiBI8R8_xXMhw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_c14cgEvtEeiBI8R8_xXMhw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_c28McEvtEeiBI8R8_xXMhw" name="LegacyStyledElement"/>
+      <visibility xmi:id="_pPNtgkvpEeiDYNBtoVGnnA" label="#"/>
+      <cardinality xmi:id="_pPNtg0vpEeiDYNBtoVGnnA" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_pPNthEvpEeiDYNBtoVGnnA" name="Sender">
+        <modelElement href="callCenterApp.uml#_oBJX4EvpEeiDYNBtoVGnnA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_pPNthUvpEeiDYNBtoVGnnA" name="setBusy">
+      <modelElement href="callCenterApp.uml#_nytTQEvpEeiDYNBtoVGnnA"/>
+      <visibility xmi:id="_pPNthkvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pPNth0vpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_pPNtiEvpEeiDYNBtoVGnnA">
+        <modelElement href="callCenterApp.uml#_oa4GgEvpEeiDYNBtoVGnnA"/>
+        <type xmi:id="_pPNtiUvpEeiDYNBtoVGnnA" name="Agent">
+          <modelElement href="callCenterApp.uml#_nyFoMEvpEeiDYNBtoVGnnA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_pPNtikvpEeiDYNBtoVGnnA" name="busy">
+        <modelElement href="callCenterApp.uml#_nyyy0EvpEeiDYNBtoVGnnA"/>
+        <cardinality xmi:id="_pPNti0vpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+        <type xmi:id="_pPNtjEvpEeiDYNBtoVGnnA" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pPNtjUvpEeiDYNBtoVGnnA" name="getListSenderAttended">
+      <modelElement href="callCenterApp.uml#_nzA1QEvpEeiDYNBtoVGnnA"/>
+      <visibility xmi:id="_pPNtjkvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pPNtj0vpEeiDYNBtoVGnnA" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_pPNtkEvpEeiDYNBtoVGnnA">
+        <modelElement href="callCenterApp.uml#_nzDRgEvpEeiDYNBtoVGnnA"/>
+        <type xmi:id="_pPNtkUvpEeiDYNBtoVGnnA" name="Sender">
+          <modelElement href="callCenterApp.uml#_oBJX4EvpEeiDYNBtoVGnnA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_pPNtkkvpEeiDYNBtoVGnnA" name="isBusy">
+      <modelElement href="callCenterApp.uml#_nzR7AEvpEeiDYNBtoVGnnA"/>
+      <stereotypes xmi:id="_pPNtk0vpEeiDYNBtoVGnnA" name="LegacyStyledElement">
+        <modelElement href="callCenterApp.uml#_nzmrIEvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pPNtlEvpEeiDYNBtoVGnnA" name="Annotations">
+        <modelElement href="callCenterApp.uml#_nzpucEvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <visibility xmi:id="_pPNtlUvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pPNtlkvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_pPNtl0vpEeiDYNBtoVGnnA">
+        <modelElement href="callCenterApp.uml#_nzZPwEvpEeiDYNBtoVGnnA"/>
+        <type xmi:id="_pPNtmEvpEeiDYNBtoVGnnA" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_pPNtmUvpEeiDYNBtoVGnnA" name="toString">
+      <modelElement href="callCenterApp.uml#_nzsxwEvpEeiDYNBtoVGnnA"/>
+      <stereotypes xmi:id="_pPNtmkvpEeiDYNBtoVGnnA" name="LegacyStyledElement">
+        <modelElement href="callCenterApp.uml#_n0GaYEvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pPNtm0vpEeiDYNBtoVGnnA" name="Annotations">
+        <modelElement href="callCenterApp.uml#_n0LS4EvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <visibility xmi:id="_pPNtnEvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pPNtnUvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_pPNtnkvpEeiDYNBtoVGnnA">
+        <modelElement href="callCenterApp.uml#_nz_ssEvpEeiDYNBtoVGnnA"/>
+        <type xmi:id="_pPNtn0vpEeiDYNBtoVGnnA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_pPNtoEvpEeiDYNBtoVGnnA" name="addSender">
+      <modelElement href="callCenterApp.uml#_oa5UoEvpEeiDYNBtoVGnnA"/>
+      <visibility xmi:id="_pPNtoUvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pPNtokvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_pPNto0vpEeiDYNBtoVGnnA" name="sender">
+        <modelElement href="callCenterApp.uml#_oa57sEvpEeiDYNBtoVGnnA"/>
+        <cardinality xmi:id="_pPNtpEvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+        <type xmi:id="_pPNtpUvpEeiDYNBtoVGnnA" name="Sender">
+          <modelElement href="callCenterApp.uml#_oBJX4EvpEeiDYNBtoVGnnA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pPNtpkvpEeiDYNBtoVGnnA" name="answer">
+      <modelElement href="callCenterApp.uml#_oa8X8EvpEeiDYNBtoVGnnA"/>
+      <stereotypes xmi:id="_pPNtp0vpEeiDYNBtoVGnnA" name="LegacyStyledElement">
+        <modelElement href="callCenterApp.uml#_obCekEvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pPNtqEvpEeiDYNBtoVGnnA" name="Annotations">
+        <modelElement href="callCenterApp.uml#_obGI8EvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <visibility xmi:id="_pPNtqUvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pPNtqkvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_pPNtq0vpEeiDYNBtoVGnnA">
+        <modelElement href="callCenterApp.uml#_ogHy4EvpEeiDYNBtoVGnnA"/>
+        <type xmi:id="_pPNtrEvpEeiDYNBtoVGnnA" name="Runnable">
+          <modelElement href="callCenterApp.uml#_of9a0EvpEeiDYNBtoVGnnA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_pPNtrUvpEeiDYNBtoVGnnA" name="caller">
+        <modelElement href="callCenterApp.uml#_oa8_AEvpEeiDYNBtoVGnnA"/>
+        <cardinality xmi:id="_pPNtrkvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+        <type xmi:id="_pPNtr0vpEeiDYNBtoVGnnA" name="Caller">
+          <modelElement href="callCenterApp.uml#_n-yncEvpEeiDYNBtoVGnnA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_pTfJgEvpEeiDYNBtoVGnnA" name="Operator" associationsOut="_pTYb0EvpEeiDYNBtoVGnnA" generalizations="_pTXNsEvpEeiDYNBtoVGnnA">
+    <modelElement href="callCenterApp.uml#_n8lA8EvpEeiDYNBtoVGnnA"/>
+    <visualProperties xmi:id="_pTfJgUvpEeiDYNBtoVGnnA" position="-1766.0,416.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_pTfJgkvpEeiDYNBtoVGnnA" label="+"/>
+    <attributes xmi:id="_pTfJg0vpEeiDYNBtoVGnnA" defaultValue="r -> r instanceof Operator" name="isOneOperator" staticAttribute="true">
+      <modelElement href="callCenterApp.uml#_oj3DYEvpEeiDYNBtoVGnnA"/>
+      <stereotypes xmi:id="_fTcLcEvqEeisQYf6iZKz6A" name="Generics"/>
+      <stereotypes xmi:id="_fTo_wEvqEeisQYf6iZKz6A" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_fT10EEvqEeisQYf6iZKz6A" name="Generics"/>
+      <stereotypes xmi:id="_fUR48EvqEeisQYf6iZKz6A" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_fWZY0EvqEeisQYf6iZKz6A" name="Generics"/>
+      <stereotypes xmi:id="_fWb1EEvqEeisQYf6iZKz6A" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_c2hVsEvtEeiBI8R8_xXMhw" name="Generics"/>
+      <stereotypes xmi:id="_c2h8wEvtEeiBI8R8_xXMhw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_c2jK4EvtEeiBI8R8_xXMhw" name="Generics"/>
+      <stereotypes xmi:id="_c2jx8EvtEeiBI8R8_xXMhw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_c29akEvtEeiBI8R8_xXMhw" name="Generics"/>
+      <stereotypes xmi:id="_c2-BoEvtEeiBI8R8_xXMhw" name="LegacyStyledElement"/>
+      <visibility xmi:id="_pTfJhkvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pTfJh0vpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <type xmi:id="_pTfJiEvpEeiDYNBtoVGnnA" name="Predicate">
+        <modelElement href="callCenterApp.uml#_oaZlYEvpEeiDYNBtoVGnnA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_pTfJiUvpEeiDYNBtoVGnnA" name="Operator">
+      <modelElement href="callCenterApp.uml#_n8ruoEvpEeiDYNBtoVGnnA"/>
+      <keywords xmi:id="_pTfJikvpEeiDYNBtoVGnnA" keyword="create"/>
+      <visibility xmi:id="_pTfJi0vpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pTfJjEvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_pTfJjUvpEeiDYNBtoVGnnA">
+        <modelElement href="callCenterApp.uml#_n8ux8EvpEeiDYNBtoVGnnA"/>
+        <type xmi:id="_pTfJjkvpEeiDYNBtoVGnnA" name="Operator">
+          <modelElement href="callCenterApp.uml#_n8lA8EvpEeiDYNBtoVGnnA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_pTfwkEvpEeiDYNBtoVGnnA" name="name">
+        <modelElement href="callCenterApp.uml#_n8sVsEvpEeiDYNBtoVGnnA"/>
+        <cardinality xmi:id="_pTfwkUvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+        <type xmi:id="_pTfwkkvpEeiDYNBtoVGnnA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_pSVS8EvpEeiDYNBtoVGnnA" name="IncomingCall" associationsOut="_pR3Y4EvpEeiDYNBtoVGnnA _pR6cMEvpEeiDYNBtoVGnnA _pSSPoEvpEeiDYNBtoVGnnA" generalizations="_pR51IEvpEeiDYNBtoVGnnA">
+    <modelElement href="callCenterApp.uml#_n6sKkEvpEeiDYNBtoVGnnA"/>
+    <visualProperties xmi:id="_pSVS8UvpEeiDYNBtoVGnnA" position="-949.0,128.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_pSVS8kvpEeiDYNBtoVGnnA" label="+"/>
+    <attributes xmi:id="_pSVS80vpEeiDYNBtoVGnnA" defaultValue="LoggerFactory.getLogger(IncomingCall.class)" name="logger" staticAttribute="true">
+      <modelElement href="callCenterApp.uml#_ojUQ0EvpEeiDYNBtoVGnnA"/>
+      <stereotypes xmi:id="_fRIeUEvqEeisQYf6iZKz6A" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_fRcnYEvqEeisQYf6iZKz6A" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_fVwfoEvqEeisQYf6iZKz6A" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_c2T6UEvtEeiBI8R8_xXMhw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_c2WWkEvtEeiBI8R8_xXMhw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_c2_PwEvtEeiBI8R8_xXMhw" name="LegacyStyledElement"/>
+      <visibility xmi:id="_pSVS9UvpEeiDYNBtoVGnnA" label="~"/>
+      <cardinality xmi:id="_pSVS9kvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <type xmi:id="_pSVS90vpEeiDYNBtoVGnnA" name="Logger">
+        <modelElement href="callCenterApp.uml#_ocEZUEvpEeiDYNBtoVGnnA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pSVS-EvpEeiDYNBtoVGnnA" name="caller">
+      <modelElement href="callCenterApp.uml#_ojX7MEvpEeiDYNBtoVGnnA"/>
+      <stereotypes xmi:id="_fQgMMEvqEeisQYf6iZKz6A" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_fQryYEvqEeisQYf6iZKz6A" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_fV1_MEvqEeisQYf6iZKz6A" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_c2QP8EvtEeiBI8R8_xXMhw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_c2SFIEvtEeiBI8R8_xXMhw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_c3Ad4EvtEeiBI8R8_xXMhw" name="LegacyStyledElement"/>
+      <visibility xmi:id="_pSVS-kvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pSVS-0vpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <type xmi:id="_pSVS_EvpEeiDYNBtoVGnnA" name="Caller">
+        <modelElement href="callCenterApp.uml#_n-yncEvpEeiDYNBtoVGnnA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pSVS_UvpEeiDYNBtoVGnnA" name="agent">
+      <modelElement href="callCenterApp.uml#_ojfP8EvpEeiDYNBtoVGnnA"/>
+      <stereotypes xmi:id="_fQEuYEvqEeisQYf6iZKz6A" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_fQasoEvqEeisQYf6iZKz6A" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_fV8s4EvqEeisQYf6iZKz6A" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_c2L-gEvtEeiBI8R8_xXMhw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_c2OawEvtEeiBI8R8_xXMhw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_c3CTEEvtEeiBI8R8_xXMhw" name="LegacyStyledElement"/>
+      <visibility xmi:id="_pSVS_0vpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pSVTAEvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <type xmi:id="_pSVTAUvpEeiDYNBtoVGnnA" name="Agent">
+        <modelElement href="callCenterApp.uml#_nyFoMEvpEeiDYNBtoVGnnA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pSVTAkvpEeiDYNBtoVGnnA" defaultValue="getCallTime()" name="timeCall">
+      <modelElement href="callCenterApp.uml#_oji6UEvpEeiDYNBtoVGnnA"/>
+      <stereotypes xmi:id="_pSVTA0vpEeiDYNBtoVGnnA" name="LegacyStyledElement">
+        <modelElement href="callCenterApp.uml#_ojnLwEvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <visibility xmi:id="_pSVTBEvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pSVTBUvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <type xmi:id="_pSVTBkvpEeiDYNBtoVGnnA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_pSVTB0vpEeiDYNBtoVGnnA" name="run">
+      <modelElement href="callCenterApp.uml#_n7JdkEvpEeiDYNBtoVGnnA"/>
+      <stereotypes xmi:id="_pSVTCEvpEeiDYNBtoVGnnA" name="LegacyStyledElement">
+        <modelElement href="callCenterApp.uml#_n7Mg4EvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pSVTCUvpEeiDYNBtoVGnnA" name="Annotations">
+        <modelElement href="callCenterApp.uml#_n7Vq0EvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <visibility xmi:id="_pSVTCkvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pSVTC0vpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_pSVTDEvpEeiDYNBtoVGnnA" name="toString">
+      <modelElement href="callCenterApp.uml#_n7W48EvpEeiDYNBtoVGnnA"/>
+      <stereotypes xmi:id="_pSVTDUvpEeiDYNBtoVGnnA" name="LegacyStyledElement">
+        <modelElement href="callCenterApp.uml#_n7fb0EvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pSVTDkvpEeiDYNBtoVGnnA" name="Annotations">
+        <modelElement href="callCenterApp.uml#_n7h4EEvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <visibility xmi:id="_pSVTD0vpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pSV6AEvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_pSV6AUvpEeiDYNBtoVGnnA">
+        <modelElement href="callCenterApp.uml#_n7ZVMEvpEeiDYNBtoVGnnA"/>
+        <type xmi:id="_pSV6AkvpEeiDYNBtoVGnnA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_pSV6A0vpEeiDYNBtoVGnnA" name="IncomingCall">
+      <modelElement href="callCenterApp.uml#_oceB8EvpEeiDYNBtoVGnnA"/>
+      <keywords xmi:id="_pSV6BEvpEeiDYNBtoVGnnA" keyword="create"/>
+      <visibility xmi:id="_pSV6BUvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pSV6BkvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_pSV6B0vpEeiDYNBtoVGnnA">
+        <modelElement href="callCenterApp.uml#_ocgeMUvpEeiDYNBtoVGnnA"/>
+        <type xmi:id="_pSV6CEvpEeiDYNBtoVGnnA" name="IncomingCall">
+          <modelElement href="callCenterApp.uml#_n6sKkEvpEeiDYNBtoVGnnA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_pSV6CUvpEeiDYNBtoVGnnA" name="agent">
+        <modelElement href="callCenterApp.uml#_ocepAEvpEeiDYNBtoVGnnA"/>
+        <cardinality xmi:id="_pSV6CkvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+        <type xmi:id="_pSV6C0vpEeiDYNBtoVGnnA" name="Agent">
+          <modelElement href="callCenterApp.uml#_nyFoMEvpEeiDYNBtoVGnnA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_pSV6DEvpEeiDYNBtoVGnnA" name="caller">
+        <modelElement href="callCenterApp.uml#_ocfQEEvpEeiDYNBtoVGnnA"/>
+        <cardinality xmi:id="_pSV6DUvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+        <type xmi:id="_pSV6DkvpEeiDYNBtoVGnnA" name="Caller">
+          <modelElement href="callCenterApp.uml#_n-yncEvpEeiDYNBtoVGnnA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_pSV6D0vpEeiDYNBtoVGnnA" name="doCall">
+      <modelElement href="callCenterApp.uml#_ociTYEvpEeiDYNBtoVGnnA"/>
+      <stereotypes xmi:id="_pSV6EEvpEeiDYNBtoVGnnA" name="LegacyStyledElement">
+        <modelElement href="callCenterApp.uml#_ocsrcEvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_pSV6EUvpEeiDYNBtoVGnnA" name="Annotations">
+        <modelElement href="callCenterApp.uml#_ocugoEvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <visibility xmi:id="_pSV6EkvpEeiDYNBtoVGnnA" label="#"/>
+      <cardinality xmi:id="_pSV6E0vpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_pSV6FEvpEeiDYNBtoVGnnA" name="sender">
+        <modelElement href="callCenterApp.uml#_oci6cEvpEeiDYNBtoVGnnA"/>
+        <cardinality xmi:id="_pSV6FUvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+        <type xmi:id="_pSV6FkvpEeiDYNBtoVGnnA" name="Sender">
+          <modelElement href="callCenterApp.uml#_oBJX4EvpEeiDYNBtoVGnnA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_pSV6F0vpEeiDYNBtoVGnnA" name="receiver">
+        <modelElement href="callCenterApp.uml#_ocjhgEvpEeiDYNBtoVGnnA"/>
+        <cardinality xmi:id="_pSV6GEvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+        <type xmi:id="_pSV6GUvpEeiDYNBtoVGnnA" name="Receiver">
+          <modelElement href="callCenterApp.uml#_oAgesEvpEeiDYNBtoVGnnA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_pOJWgEvpEeiDYNBtoVGnnA" name="Person" abstractClass="true" subclassedBy="_pOoesEvpEeiDYNBtoVGnnA _pTzSkEvpEeiDYNBtoVGnnA">
+    <modelElement href="callCenterApp.uml#_n252wEvpEeiDYNBtoVGnnA"/>
+    <visualProperties xmi:id="_pOJWgUvpEeiDYNBtoVGnnA" position="-1421.0,-198.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_pOJWgkvpEeiDYNBtoVGnnA" label="+"/>
+    <attributes xmi:id="_pOJWg0vpEeiDYNBtoVGnnA" name="name">
+      <modelElement href="callCenterApp.uml#_oioUUEvpEeiDYNBtoVGnnA"/>
+      <stereotypes xmi:id="_pOJWhEvpEeiDYNBtoVGnnA" name="LegacyStyledElement">
+        <modelElement href="callCenterApp.uml#_oiqwkEvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <visibility xmi:id="_pOJWhUvpEeiDYNBtoVGnnA" label="#"/>
+      <cardinality xmi:id="_pOJ9kEvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <type xmi:id="_pOJ9kUvpEeiDYNBtoVGnnA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pOJ9kkvpEeiDYNBtoVGnnA" name="busy">
+      <modelElement href="callCenterApp.uml#_oir-sEvpEeiDYNBtoVGnnA"/>
+      <stereotypes xmi:id="_pOJ9k0vpEeiDYNBtoVGnnA" name="LegacyStyledElement">
+        <modelElement href="callCenterApp.uml#_oitz4EvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <visibility xmi:id="_pOJ9lEvpEeiDYNBtoVGnnA" label="#"/>
+      <cardinality xmi:id="_pOJ9lUvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <type xmi:id="_pOJ9lkvpEeiDYNBtoVGnnA" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_pOJ9l0vpEeiDYNBtoVGnnA" name="getName">
+      <modelElement href="callCenterApp.uml#_n3V7oEvpEeiDYNBtoVGnnA"/>
+      <visibility xmi:id="_pOJ9mEvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pOJ9mUvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_pOJ9mkvpEeiDYNBtoVGnnA">
+        <modelElement href="callCenterApp.uml#_n38YkEvpEeiDYNBtoVGnnA"/>
+        <type xmi:id="_pOJ9m0vpEeiDYNBtoVGnnA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_pOJ9nEvpEeiDYNBtoVGnnA" name="isBusy">
+      <modelElement href="callCenterApp.uml#_n4GJkEvpEeiDYNBtoVGnnA"/>
+      <visibility xmi:id="_pOJ9nUvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pOJ9nkvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_pOJ9n0vpEeiDYNBtoVGnnA">
+        <modelElement href="callCenterApp.uml#_n4PTgEvpEeiDYNBtoVGnnA"/>
+        <type xmi:id="_pOJ9oEvpEeiDYNBtoVGnnA" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_pOZ1MEvpEeiDYNBtoVGnnA" name="Call" abstractClass="true" generalizations="_fEGH4EvqEeisQYf6iZKz6A" subclassedBy="_pR51IEvpEeiDYNBtoVGnnA">
+    <modelElement href="callCenterApp.uml#_n1_30EvpEeiDYNBtoVGnnA"/>
+    <visualProperties xmi:id="_pOacQEvpEeiDYNBtoVGnnA" position="-935.0,-196.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_pOacQUvpEeiDYNBtoVGnnA" label="+"/>
+    <attributes xmi:id="_pOacQkvpEeiDYNBtoVGnnA" defaultValue="5000" name="MIN_TIME_CALL_MILLI_SECONDS" staticAttribute="true">
+      <modelElement href="callCenterApp.uml#_oiLoYEvpEeiDYNBtoVGnnA"/>
+      <stereotypes xmi:id="_pOacQ0vpEeiDYNBtoVGnnA" name="LegacyStyledElement">
+        <modelElement href="callCenterApp.uml#_oiWngEvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <visibility xmi:id="_pOacREvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pOacRUvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <type xmi:id="_pOacRkvpEeiDYNBtoVGnnA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_pOacR0vpEeiDYNBtoVGnnA" defaultValue="10000" name="MAX_TIME_CALL_MILLI_SECONDS" staticAttribute="true">
+      <modelElement href="callCenterApp.uml#_oiX1oEvpEeiDYNBtoVGnnA"/>
+      <stereotypes xmi:id="_pOacSEvpEeiDYNBtoVGnnA" name="LegacyStyledElement">
+        <modelElement href="callCenterApp.uml#_oimfIEvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <visibility xmi:id="_pOacSUvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pOacSkvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <type xmi:id="_pOacS0vpEeiDYNBtoVGnnA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_pOacTEvpEeiDYNBtoVGnnA" name="getCallTime">
+      <modelElement href="callCenterApp.uml#_n2OhUEvpEeiDYNBtoVGnnA"/>
+      <visibility xmi:id="_pOacTUvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pOacTkvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_pOacT0vpEeiDYNBtoVGnnA">
+        <modelElement href="callCenterApp.uml#_n2V2EEvpEeiDYNBtoVGnnA"/>
+        <type xmi:id="_pOacUEvpEeiDYNBtoVGnnA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_pOacUUvpEeiDYNBtoVGnnA" abstractOperation="true" name="doCall">
+      <modelElement href="callCenterApp.uml#_obpikEvpEeiDYNBtoVGnnA"/>
+      <visibility xmi:id="_pOacUkvpEeiDYNBtoVGnnA" label="#"/>
+      <cardinality xmi:id="_pOacU0vpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_pOacVEvpEeiDYNBtoVGnnA" name="sender">
+        <modelElement href="callCenterApp.uml#_obqJoEvpEeiDYNBtoVGnnA"/>
+        <cardinality xmi:id="_pOacVUvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+        <type xmi:id="_pOacVkvpEeiDYNBtoVGnnA" name="Sender">
+          <modelElement href="callCenterApp.uml#_oBJX4EvpEeiDYNBtoVGnnA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_pOacV0vpEeiDYNBtoVGnnA" name="receiver">
+        <modelElement href="callCenterApp.uml#_obqwsEvpEeiDYNBtoVGnnA"/>
+        <cardinality xmi:id="_pOacWEvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+        <type xmi:id="_pOacWUvpEeiDYNBtoVGnnA" name="Receiver">
+          <modelElement href="callCenterApp.uml#_oAgesEvpEeiDYNBtoVGnnA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_pUICsEvpEeiDYNBtoVGnnA" name="Sender" associationsIn="_pOqT4EvpEeiDYNBtoVGnnA" subclassedBy="_pTz5oEvpEeiDYNBtoVGnnA">
+    <modelElement href="callCenterApp.uml#_oBJX4EvpEeiDYNBtoVGnnA"/>
+    <visualProperties xmi:id="_pUIpwEvpEeiDYNBtoVGnnA" position="-1216.0,-153.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_pUIpwUvpEeiDYNBtoVGnnA" label="+"/>
+    <attributes xmi:id="_pUIpwkvpEeiDYNBtoVGnnA" name="attended">
+      <modelElement href="callCenterApp.uml#_oBVlIEvpEeiDYNBtoVGnnA"/>
+      <visibility xmi:id="_pUIpw0vpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pUIpxEvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <type xmi:id="_pUIpxUvpEeiDYNBtoVGnnA" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_pUDxQEvpEeiDYNBtoVGnnA" name="Receiver" subclassedBy="_pOpFwEvpEeiDYNBtoVGnnA">
+    <modelElement href="callCenterApp.uml#_oAgesEvpEeiDYNBtoVGnnA"/>
+    <visualProperties xmi:id="_pUDxQUvpEeiDYNBtoVGnnA" position="-1729.0,-160.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_pUDxQkvpEeiDYNBtoVGnnA" label="+"/>
+    <operations xmi:id="_pUDxQ0vpEeiDYNBtoVGnnA" name="isBusy">
+      <modelElement href="callCenterApp.uml#_oA3EAEvpEeiDYNBtoVGnnA"/>
+      <keywords xmi:id="_pUDxREvpEeiDYNBtoVGnnA" keyword="defender"/>
+      <stereotypes xmi:id="_pUDxRUvpEeiDYNBtoVGnnA" name="LegacyStyledElement">
+        <modelElement href="callCenterApp.uml#_oA9KoEvpEeiDYNBtoVGnnA"/>
+      </stereotypes>
+      <visibility xmi:id="_pUDxRkvpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pUDxR0vpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_pUDxSEvpEeiDYNBtoVGnnA">
+        <modelElement href="callCenterApp.uml#_oA5gQEvpEeiDYNBtoVGnnA"/>
+        <type xmi:id="_pUDxSUvpEeiDYNBtoVGnnA" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_pUDxSkvpEeiDYNBtoVGnnA" name="answer">
+      <modelElement href="callCenterApp.uml#_oe4cwEvpEeiDYNBtoVGnnA"/>
+      <visibility xmi:id="_pUDxS0vpEeiDYNBtoVGnnA" label="+"/>
+      <cardinality xmi:id="_pUDxTEvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_pUDxTUvpEeiDYNBtoVGnnA">
+        <modelElement href="callCenterApp.uml#_ohMw8EvpEeiDYNBtoVGnnA"/>
+        <type xmi:id="_pUDxTkvpEeiDYNBtoVGnnA" name="Runnable">
+          <modelElement href="callCenterApp.uml#_of9a0EvpEeiDYNBtoVGnnA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_pUDxT0vpEeiDYNBtoVGnnA" name="caller">
+        <modelElement href="callCenterApp.uml#_oe5D0EvpEeiDYNBtoVGnnA"/>
+        <cardinality xmi:id="_pUDxUEvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
+        <type xmi:id="_pUDxUUvpEeiDYNBtoVGnnA" name="Caller">
+          <modelElement href="callCenterApp.uml#_n-yncEvpEeiDYNBtoVGnnA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>
