@@ -27,7 +27,8 @@ segundos.
 > - [x] Dar alguna solución sobre qué pasa con una llamada cuando no hay
 ningún empleado libre. 
 
-     @Respuesta:Se inserta en una cola todos remitentes que no han sido atentidos.*
+     @Respuesta:Se inserta en una cola todos los remitentes que no han sido atentidos, 
+     luego en un loop se atiendes los remitentes encolados.*
 
 > - [x] Dar alguna solución sobre qué pasa con una llamada cuando entran
 más de 10 llamadas concurrentes. 
@@ -82,6 +83,21 @@ Running callcenter.com.co.app.DispatchCallTest
 Start call Operator_1 -> Caller_7
 Start call Operator_2 -> Caller_9
 Start call Operator_3 -> Caller_10
+...
+
+Results :
+
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+
+....
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 47.902 s
+[INFO] Finished at: 2018-04-29T02:35:45-05:00
+[INFO] Final Memory: 17M/179M
+[INFO] ------------------------------------------------------------------------
 
 .....
 
