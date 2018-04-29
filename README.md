@@ -73,16 +73,16 @@ Este proyecto usa Maven para la gestión de librerías o dependencias por lo tan
 $ mvn clean install
 
 ``` 
-La ejecucion de comandos anterior puede  tardar hasta algunos minutos si es necesario descargar las dependencias.
+La ejecucion de comandos anterior puede  tardar algunos minutos (si es necesario descargar las dependencias).
 
 ### Resultado esperado (test unit)
 
-Las pruebas unitarias tardes aproximadamente 39 segundos dependiendo la cantidad de procesaodres y memoria. 
-1. test01: La primera prueba envia 10 hilos y se evalua que sean atendidos primero los 6 operadores luego por los tres supervisores y un director.
+Las pruebas unitarias tardan aproximadamente 30 segundos dependiendo la cantidad de procesaodres y memoria. 
+1. test01: La primera prueba envia 10 hilos y se evalúa que sean atendidos primero por los 6 operadores luego por los tres supervisores y un director.
 2. test02: La segunda prueba envia 10 hilos en paralelo y el resultado esperado es que se crean la 10 llamadas al tiempo con una duración cercana a los 10 segundos.
 3. test03 En la última prueba se envian 22 hilos en paralelo y se evalua que sean creadas 22 llamadas.
 
-El pool de hilos es de 10.
+***NOTA: La cantidad de agentes del callcenter es configurable. El tamaño del pool también. Las pruebas estan con un pool de 10 hilos.***
 
 ```bash 
 -------------------------------------------------------
