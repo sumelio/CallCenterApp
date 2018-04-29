@@ -1026,11 +1026,11 @@
       </parameters>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_pSVS8EvpEeiDYNBtoVGnnA" name="IncomingCall" associationsOut="_pR3Y4EvpEeiDYNBtoVGnnA _pR6cMEvpEeiDYNBtoVGnnA _pSSPoEvpEeiDYNBtoVGnnA" generalizations="_pR51IEvpEeiDYNBtoVGnnA">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_pSVS8EvpEeiDYNBtoVGnnA" name="AttendingCall" associationsOut="_pR3Y4EvpEeiDYNBtoVGnnA _pR6cMEvpEeiDYNBtoVGnnA _pSSPoEvpEeiDYNBtoVGnnA" generalizations="_pR51IEvpEeiDYNBtoVGnnA">
     <modelElement href="callCenterApp.uml#_n6sKkEvpEeiDYNBtoVGnnA"/>
     <visualProperties xmi:id="_pSVS8UvpEeiDYNBtoVGnnA" position="-949.0,128.0" size="-1.0,-1.0"/>
     <visibility xmi:id="_pSVS8kvpEeiDYNBtoVGnnA" label="+"/>
-    <attributes xmi:id="_pSVS80vpEeiDYNBtoVGnnA" defaultValue="LoggerFactory.getLogger(IncomingCall.class)" name="logger" staticAttribute="true">
+    <attributes xmi:id="_pSVS80vpEeiDYNBtoVGnnA" defaultValue="LoggerFactory.getLogger(AttendingCall.class)" name="logger" staticAttribute="true">
       <modelElement href="callCenterApp.uml#_ojUQ0EvpEeiDYNBtoVGnnA"/>
       <stereotypes xmi:id="_fRIeUEvqEeisQYf6iZKz6A" name="LegacyStyledElement"/>
       <stereotypes xmi:id="_fRcnYEvqEeisQYf6iZKz6A" name="LegacyStyledElement"/>
@@ -1111,14 +1111,14 @@
         </type>
       </outParameters>
     </operations>
-    <operations xmi:id="_pSV6A0vpEeiDYNBtoVGnnA" name="IncomingCall">
+    <operations xmi:id="_pSV6A0vpEeiDYNBtoVGnnA" name="AttendingCall">
       <modelElement href="callCenterApp.uml#_oceB8EvpEeiDYNBtoVGnnA"/>
       <keywords xmi:id="_pSV6BEvpEeiDYNBtoVGnnA" keyword="create"/>
       <visibility xmi:id="_pSV6BUvpEeiDYNBtoVGnnA" label="+"/>
       <cardinality xmi:id="_pSV6BkvpEeiDYNBtoVGnnA" label="1" max="1" min="1"/>
       <outParameters xmi:id="_pSV6B0vpEeiDYNBtoVGnnA">
         <modelElement href="callCenterApp.uml#_ocgeMUvpEeiDYNBtoVGnnA"/>
-        <type xmi:id="_pSV6CEvpEeiDYNBtoVGnnA" name="IncomingCall">
+        <type xmi:id="_pSV6CEvpEeiDYNBtoVGnnA" name="AttendingCall">
           <modelElement href="callCenterApp.uml#_n6sKkEvpEeiDYNBtoVGnnA"/>
         </type>
       </outParameters>

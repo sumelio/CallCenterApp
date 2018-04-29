@@ -4,7 +4,7 @@
     <eAnnotations xmi:id="_m0180EvpEeiDYNBtoVGnnA" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_m0180UvpEeiDYNBtoVGnnA" source="codegen">
         <details xmi:id="_m0180kvpEeiDYNBtoVGnnA" key="codegenDirectory" value="/callCenterApp/src/main/java"/>
-        <details xmi:id="_pIgokEvpEeiDYNBtoVGnnA" key="AssociatedSourceCode" value="/callCenterApp/src/main/java/callcenter/com/co/app/App.java;1894767913/1;/callCenterApp/src/main/java/callcenter/com/co/app/abstracts/Agent.java;3993645470/1;/callCenterApp/src/main/java/callcenter/com/co/app/abstracts/Call.java;3876776795/1;/callCenterApp/src/main/java/callcenter/com/co/app/abstracts/Person.java;1784242717/1;/callCenterApp/src/main/java/callcenter/com/co/app/configuration/Config.java;3743404630/1;/callCenterApp/src/main/java/callcenter/com/co/app/entities/receivers/Supervisor.java;2699815123/1;/callCenterApp/src/main/java/callcenter/com/co/app/entities/calls/IncomingCall.java;1692267845/1;/callCenterApp/src/main/java/callcenter/com/co/app/entities/receivers/AgentQueue.java;3616106609/1;/callCenterApp/src/main/java/callcenter/com/co/app/entities/receivers/Director.java;2638115226/1;/callCenterApp/src/main/java/callcenter/com/co/app/entities/receivers/Operator.java;314774730/1;/callCenterApp/src/main/java/callcenter/com/co/app/dispatcher/Dispatcher.java;52437210/1;/callCenterApp/src/main/java/callcenter/com/co/app/entities/senders/Caller.java;197402231/1;/callCenterApp/src/main/java/callcenter/com/co/app/interfaces/Receiver.java;4247261879/1;/callCenterApp/src/main/java/callcenter/com/co/app/interfaces/Sender.java;830644791/1;"/>
+        <details xmi:id="_pIgokEvpEeiDYNBtoVGnnA" key="AssociatedSourceCode" value="/callCenterApp/src/main/java/callcenter/com/co/app/App.java;1894767913/1;/callCenterApp/src/main/java/callcenter/com/co/app/abstracts/Agent.java;3993645470/1;/callCenterApp/src/main/java/callcenter/com/co/app/abstracts/Call.java;3876776795/1;/callCenterApp/src/main/java/callcenter/com/co/app/abstracts/Person.java;1784242717/1;/callCenterApp/src/main/java/callcenter/com/co/app/configuration/Config.java;3743404630/1;/callCenterApp/src/main/java/callcenter/com/co/app/entities/receivers/Supervisor.java;2699815123/1;/callCenterApp/src/main/java/callcenter/com/co/app/entities/calls/AttendingCall.java;1692267845/1;/callCenterApp/src/main/java/callcenter/com/co/app/entities/receivers/AgentQueue.java;3616106609/1;/callCenterApp/src/main/java/callcenter/com/co/app/entities/receivers/Director.java;2638115226/1;/callCenterApp/src/main/java/callcenter/com/co/app/entities/receivers/Operator.java;314774730/1;/callCenterApp/src/main/java/callcenter/com/co/app/dispatcher/Dispatcher.java;52437210/1;/callCenterApp/src/main/java/callcenter/com/co/app/entities/senders/Caller.java;197402231/1;/callCenterApp/src/main/java/callcenter/com/co/app/interfaces/Receiver.java;4247261879/1;/callCenterApp/src/main/java/callcenter/com/co/app/interfaces/Sender.java;830644791/1;"/>
       </contents>
     </eAnnotations>
     <elementImport xmi:id="_nyTDkEvpEeiDYNBtoVGnnA">
@@ -378,10 +378,10 @@
                 </packagedElement>
               </packagedElement>
               <packagedElement xmi:type="uml:Package" xmi:id="_nq-TkEvpEeiDYNBtoVGnnA" name="calls">
-                <packagedElement xmi:type="uml:Class" xmi:id="_n6sKkEvpEeiDYNBtoVGnnA" name="IncomingCall">
+                <packagedElement xmi:type="uml:Class" xmi:id="_n6sKkEvpEeiDYNBtoVGnnA" name="AttendingCall">
                   <generalization xmi:id="_ocvuwEvpEeiDYNBtoVGnnA" general="_n1_30EvpEeiDYNBtoVGnnA"/>
                   <ownedAttribute xmi:id="_ojUQ0EvpEeiDYNBtoVGnnA" name="logger" visibility="package" isLeaf="true" isStatic="true" type="_ocEZUEvpEeiDYNBtoVGnnA" isReadOnly="true" association="_omC0sEvpEeiDYNBtoVGnnA">
-                    <defaultValue xmi:type="uml:LiteralString" xmi:id="_ojU34EvpEeiDYNBtoVGnnA" value="LoggerFactory.getLogger(IncomingCall.class)"/>
+                    <defaultValue xmi:type="uml:LiteralString" xmi:id="_ojU34EvpEeiDYNBtoVGnnA" value="LoggerFactory.getLogger(AttendingCall.class)"/>
                   </ownedAttribute>
                   <ownedAttribute xmi:id="_ojX7MEvpEeiDYNBtoVGnnA" name="caller" type="_n-yncEvpEeiDYNBtoVGnnA" association="_omHtMEvpEeiDYNBtoVGnnA"/>
                   <ownedAttribute xmi:id="_ojfP8EvpEeiDYNBtoVGnnA" name="agent" type="_nyFoMEvpEeiDYNBtoVGnnA" association="_omQ3IEvpEeiDYNBtoVGnnA"/>
@@ -389,7 +389,7 @@
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
                     <defaultValue xmi:type="uml:LiteralString" xmi:id="_ojkIcEvpEeiDYNBtoVGnnA" value="getCallTime()"/>
                   </ownedAttribute>
-                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_okt_AEvpEeiDYNBtoVGnnA" name="IncomingCall" specification="_oceB8EvpEeiDYNBtoVGnnA">
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_okt_AEvpEeiDYNBtoVGnnA" name="AttendingCall" specification="_oceB8EvpEeiDYNBtoVGnnA">
                     <ownedParameter xmi:id="_okt_AUvpEeiDYNBtoVGnnA" name="agent" type="_nyFoMEvpEeiDYNBtoVGnnA"/>
                     <ownedParameter xmi:id="_okt_AkvpEeiDYNBtoVGnnA" name="caller" type="_n-yncEvpEeiDYNBtoVGnnA"/>
                     <ownedParameter xmi:id="_okt_A0vpEeiDYNBtoVGnnA" type="_n6sKkEvpEeiDYNBtoVGnnA" direction="return"/>
@@ -437,7 +437,7 @@
                       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                     </ownedParameter>
                   </ownedOperation>
-                  <ownedOperation xmi:id="_oceB8EvpEeiDYNBtoVGnnA" name="IncomingCall" method="_okt_AEvpEeiDYNBtoVGnnA">
+                  <ownedOperation xmi:id="_oceB8EvpEeiDYNBtoVGnnA" name="AttendingCall" method="_okt_AEvpEeiDYNBtoVGnnA">
                     <eAnnotations xmi:id="_ocf3IEvpEeiDYNBtoVGnnA" source="http://www.eclipse.org/uml2/2.0.0/UML">
                       <details xmi:id="_ocgeMEvpEeiDYNBtoVGnnA" key="create"/>
                     </eAnnotations>
@@ -645,7 +645,7 @@
                   <ownedParameter xmi:id="_okdgUUvpEeiDYNBtoVGnnA" name="caller" type="_n-yncEvpEeiDYNBtoVGnnA"/>
                   <ownedParameter xmi:id="_okdgUkvpEeiDYNBtoVGnnA" type="_of9a0EvpEeiDYNBtoVGnnA" direction="return"/>
                   <language>java</language>
-                  <body>Call call = new IncomingCall(this, caller);
+                  <body>Call call = new AttendingCall(this, caller);
 		this.addSender(caller);
 		return call;
 	</body>

@@ -69,7 +69,7 @@ public class DispatchCallTest {
 	
 	
 	/**
-	 * Send 10 threads a same time to dispatchCall method. The resuld should be:
+	 * Send 10 threads a same time to dispatchCall method. The result should be:
 	 * 1. 10 threads should be 10 calls
 	 * 2. The maximum call duration is Call.MAX_TIME_CALL_MILLI_SECONDS (10 seconds)
 	 *    seconds and this should be greater than total current time dispatcher
