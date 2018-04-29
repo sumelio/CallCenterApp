@@ -111,7 +111,7 @@ Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 39.675 sec - in 
 
 ```
 
-## Diagrama de class
+## Diagrama de clases
 
 ![https://github.com/sumelio/CallCenterApp/blob/master/src/resources/img/callcenter_App.png](https://github.com/sumelio/CallCenterApp/blob/master/src/resources/img/callcenter_App.png)
 
