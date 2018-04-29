@@ -113,7 +113,7 @@ Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 39.675 sec - in 
 
 ## Diagrama de clases
 
-![https://github.com/sumelio/CallCenterApp/blob/master/src/resources/img/callcenter_App.png](https://github.com/sumelio/CallCenterApp/blob/master/src/resources/img/callcenter_App.png)
+![https://github.com/sumelio/CallCenterApp/blob/master/src/resources/img/callcenterApp.png](https://github.com/sumelio/CallCenterApp/blob/master/src/resources/img/callcenterApp.png)
 
 La clase abstracta **Agent** implementa la interfaz **Receiver** y extiende o es hija de **Person**. Tiene el método answer para dar respuesta a la persona que llama (caller).
 Además tiene cuatro clases hijas: Operator, Supervisor, Director y AgentQueue. **AgentQueue** sobreescribe el método answer para encolar un **Caller** y atenderlo cuando los demas agentes esten disponible. Los demás agentes atienden a los *callers* creando la instancia **AttendingCall**.
