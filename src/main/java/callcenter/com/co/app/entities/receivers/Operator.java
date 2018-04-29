@@ -10,6 +10,4 @@ public class Operator extends Agent {
 	public Operator(String name) {
 		super.name = name;
 	}
-
- 
 }

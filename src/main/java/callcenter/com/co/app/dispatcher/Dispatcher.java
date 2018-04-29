@@ -1,18 +1,6 @@
 package callcenter.com.co.app.dispatcher;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.concurrent.ConcurrentLinkedQueue;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.atomic.AtomicBoolean;
-import java.util.concurrent.locks.ReentrantLock;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
-
 import callcenter.com.co.app.abstracts.Agent;
-import callcenter.com.co.app.abstracts.Call;
 import callcenter.com.co.app.configuration.Config;
 import callcenter.com.co.app.entities.receivers.AgentQueue;
 import callcenter.com.co.app.entities.receivers.Director;
@@ -21,39 +9,44 @@ import callcenter.com.co.app.entities.receivers.Supervisor;
 import callcenter.com.co.app.entities.senders.Caller;
 import callcenter.com.co.app.interfaces.Sender;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.concurrent.ConcurrentLinkedQueue;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.locks.ReentrantLock;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+
+/**
+ *  This dispatcher managers all concurrent request of the dispatchCall
+ *
+ *
+ */
 public class Dispatcher {
 
-	
 	private  ExecutorService executor;
-	
-	public ExecutorService getExecutor() {
-		return this.executor;
-	}
-	
+
 	private List<Agent> receivers;
-	
-	public List<Agent> getReceivers() {
-		return this.receivers;
-	}
-	
+
 	private  ConcurrentLinkedQueue<Sender> queueCallers;
 		
 	private  ReentrantLock lock;
 
 	private  boolean running;
-	
-	
-	public static Dispatcher getInstance(Config config) {
-		Dispatcher dispatcher = new Dispatcher(config);
 
-		dispatcher.queueCallers = new ConcurrentLinkedQueue<Sender>();
-		dispatcher.lock = new ReentrantLock();
-		dispatcher.running = false;
-		return dispatcher;
-	}
-	
-	private Dispatcher(Config config) {
+	/**
+	 *  In this constructor all variables are initialized
+	 *
+	 * @param config
+	 */
+	public Dispatcher(Config config) {
 		executor = Executors.newFixedThreadPool(config.getnThreads());
+
+		this.queueCallers = new ConcurrentLinkedQueue<Sender>();
+		this.lock = new ReentrantLock();
+		this.running = false;
 
 		List<Agent> receiverList = new ArrayList<Agent>();
 		
@@ -72,48 +65,82 @@ public class Dispatcher {
         receivers = Collections.synchronizedList(receiverList);
 	}
 
-	
+	/**
+	 * Get all request an on queue them.
+	 *
+	 * This method places a caller on the concurrent queue and if the process is not running then
+	 * invokes the loopCallCenter method in order to start the process
+	 * @param caller This is a Caller object
+	 */
 	public void dispatchCall(Sender caller) {
+
 		queueCallers.offer(caller);
 
-		if (!running) {
-			running = true;
+		if (!running ) {
 			loopCallCenter();
 		}
 	}
-	
-		
-	private   void loopCallCenter() {
+
+	/**
+	 *  This method has a loop that gets a caller from queue and assigns an agent in order to
+	 *  attend this caller. Steps:
+	 *  1. Lock code block
+	 *  2. The process gets a caller from queue.
+	 *  3. Get a idle receivers list, in order to get all receivers are not busy in
+	 *     that instance.
+	 *  4. Try to get an operator agent, if there is not an operator then try to get
+	 *     a supervisor agent, if there is not a supervisor then try to get a director agent,
+	 *     else put on queue through of the AgentQueue.
+	 *  5. Unlock the code block
+ 	 */
+	private  void loopCallCenter() {
 		lock.lock();
 		try {
-		 while (queueCallers.size() > 0) {
+        //  callCenter loop
+		 while (! queueCallers.isEmpty()) {
 
 				Sender caller = queueCallers.poll();
-				
-				List<Agent> idleRevicers = 
+
+				//Get all receivers are not busy
+				List<Agent> idleReceivers =
 						      Collections
 						       .synchronizedList(receivers.stream()
 						       .filter(Agent.isBusy.negate())
 						       .collect(Collectors.toList()));
 
-				Agent agentIdle = 
-						idleRevicers.stream()
+				Agent assignedAgent =
+						idleReceivers.stream()
 						.filter(Operator.isOneOperator)
 						   .findFirst()
-						   .orElse(idleRevicers.stream()
+						   .orElse(idleReceivers.stream()
 								.filter(Supervisor.isOneSupervisor)
 								.findFirst()
-					            .orElse(idleRevicers.stream()
+					            .orElse(idleReceivers.stream()
 					            	.filter(Director.isOneDirector)
 					            	.findFirst()
+										// the AgentQueue on line a caller
 					               .orElse(new AgentQueue(queueCallers))))
-					   .setBusy(true);
 
-				executor.execute(agentIdle.answer((Caller) caller));
+					   .setBusy(true); // From this moment the agent is busy
+
+			    // Create a thread (Call) and send the executorPool
+				executor.execute(assignedAgent.answer((Caller) caller));
+
+
 		   }
 
 		} finally {
+			// The process has finished
+			this.running = ! queueCallers.isEmpty();
 			lock.unlock();
 		}
+	}
+
+	public List<Agent> getReceivers() {
+		return this.receivers;
+	}
+
+	public ExecutorService getExecutor() {
+		return this.executor;
 	}
 }

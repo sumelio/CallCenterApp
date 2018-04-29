@@ -26,19 +26,14 @@ public class CallAgent extends Call {
 
 	@Override
 	protected void doCall(Sender sender, Receiver receiver) {
-		
-		String threadName = "["+ Thread.currentThread().getName() +"]";
-		System.out.println(threadName+ "   ->  Start call " + agent.getClass().getSimpleName() + agent.getName() + " -> "
-				+ this.caller.getName());
-		logger.info("{}   ->  Start call {}{} -> ", threadName, this.agent.getName(),  threadName, agent.getClass().getSimpleName() , caller.getName());
-		  
-		
+		logger.info("Start {}{} -> {}",  agent.getClass().getSimpleName() , this.agent.getName(), caller.getName());
 		try {
 			Thread.sleep(timeCall);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
+			logger.error(e.getMessage(),e);
 		}
-		logger.info("{}   ----->  End  call {}{} -> ", threadName, this.agent.getName(),  threadName, agent.getClass().getSimpleName() , caller.getName());
+		logger.info("--> End {}{} -> {}, totalTime={}", agent.getClass().getSimpleName() , this.agent.getName(), caller.getName(), timeCall );
 
 
 	}
