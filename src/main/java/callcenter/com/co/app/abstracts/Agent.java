@@ -37,7 +37,7 @@ public abstract class Agent extends Person implements Receiver {
 	@Override
 	public Runnable answer(Caller caller) {
 		Call call = new CallAgent(this, caller);
-		Dispatcher.calls.add(call);
+		this.addSender(caller);
 		return call;
 	}
 
