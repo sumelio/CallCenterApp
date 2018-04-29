@@ -17,6 +17,11 @@ import static org.junit.Assert.assertEquals;
 
 /**
  * Unit test for simple CallCenterApp.
+ * 
+ * @author  Freddy Lemus
+ * 
+ * @since   0.0.1
+ * 
  */
 public class DispatchCallTest {
 
@@ -27,8 +32,8 @@ public class DispatchCallTest {
 	}
 
 	/**
-	 * Send 10 threads a same time to dispatchCall method 
-	 * and match operators, supervisor and director counters after shutdown executor
+	 * Send 10 threads at the same time to dispatchCall method 
+	 * and match operator, supervisor and director counters after shutdown executor
 	 * 
 	 */
 	@Test
@@ -60,8 +65,8 @@ public class DispatchCallTest {
 		Integer counterDirector = dispatcher.getReceivers().stream().filter(Director.isOneDirector)
 				.map(a -> a.getListSenderAttended().size()).reduce(0, (a, b) -> a + b);
 
-		assertEquals("10 threads should be 6 operator agents", 6, counterOperator.intValue());
-		assertEquals("10 threads should be 3 supervisor agents", 3, counterSupervisor.intValue());
+		assertEquals("10 threads should be 6 operative agents", 6, counterOperator.intValue());
+		assertEquals("10 threads should be 3 supervising agents", 3, counterSupervisor.intValue());
 		assertEquals("10 threads should be 1 director agents", 1, counterDirector.intValue());
 
 	}
@@ -69,7 +74,7 @@ public class DispatchCallTest {
 	
 	
 	/**
-	 * Send 10 threads a same time to dispatchCall method. The result should be:
+	 * Send 10 threads at the same time to dispatchCall method. The result should be:
 	 * 1. 10 threads should be 10 calls
 	 * 2. The maximum call duration is Call.MAX_TIME_CALL_MILLI_SECONDS (10 seconds)
 	 *    seconds and this should be greater than total current time dispatcher
@@ -108,7 +113,7 @@ public class DispatchCallTest {
 
 
 	/**
-	 * Send 22 threads a same time to dispatchCall and create 22 calls
+	 * Send 22 threads at the same time to dispatchCall and create 22 calls
 	 * 
 	 */
 	@Test

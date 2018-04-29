@@ -1,14 +1,24 @@
 package callcenter.com.co.app.configuration;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import callcenter.com.co.app.abstracts.Agent;
-
 public class Config {
+	/**
+	 * Number of threads by pool
+	 */
 	private int nThreads = 0;
+	
+	/**
+	 * number of operators
+	 */
 	private int nOperators = 0;
+	
+	/**
+	 * Number of supervisors
+	 */
 	private int nSupervisor = 0;
+	
+	/**
+	 * Number of directors
+	 */
 	private int nDirectors = 0;
 			
 

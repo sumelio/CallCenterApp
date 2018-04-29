@@ -20,9 +20,12 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 /**
- *  This dispatcher managers all concurrent request of the dispatchCall
+ *  This dispatcher managers all concurrent requests of the dispatchCall
  *
- *
+ * @author  Freddy Lemus
+ * 
+ * @since   0.0.1
+ * 
  */
 public class Dispatcher {
 
@@ -39,7 +42,7 @@ public class Dispatcher {
 	/**
 	 *  In this constructor all variables are initialized
 	 *
-	 * @param config
+	 * @param config {@see callcenter.com.co.app.configuration.Config}
 	 */
 	public Dispatcher(Config config) {
 		executor = Executors.newFixedThreadPool(config.getnThreads());
@@ -66,11 +69,11 @@ public class Dispatcher {
 	}
 
 	/**
-	 * Get all request an on queue them.
+	 * Get all requests and on queue them.
 	 *
 	 * This method places a caller on the concurrent queue and if the process is not running then
 	 * invokes the loopCallCenter method in order to start the process
-	 * @param caller This is a Caller object
+	 * @param caller This is a caller object
 	 */
 	public void dispatchCall(Sender caller) {
 
@@ -83,13 +86,12 @@ public class Dispatcher {
 
 	/**
 	 *  This method has a loop that gets a caller from queue and assigns an agent in order to
-	 *  attend this caller. Steps:
+	 *  attend this caller. The steps are following:
 	 *  1. Lock code block
 	 *  2. The process gets a caller from queue.
-	 *  3. Get a idle receivers list, in order to get all receivers are not busy in
-	 *     that instance.
+	 *  3. Get  all idle receivers or receivers are not busy in that instance.
 	 *  4. Try to get an operator agent, if there is not an operator then try to get
-	 *     a supervisor agent, if there is not a supervisor then try to get a director agent,
+	 *     a supervisor agent, if there is not a supervisor then try to get a director agent
 	 *     else put on queue through of the AgentQueue.
 	 *  5. Unlock the code block
  	 */
@@ -125,8 +127,6 @@ public class Dispatcher {
 
 			    // Create a thread (CallUp) and send the executorPool
 				executor.execute(assignedAgent.answer((Caller) caller));
-
-
 		   }
 
 		} finally {
