@@ -67,23 +67,39 @@ Apache Maven 3.3.9
 
 
 ## Ejecutar maven
-Este proyecto usa Maven para la gestión de librerías o dependencias por lo tanto se debe  ejecutar el comando:
+Para ejecutar el programa, primero ubicarse en la raíz del proyecto, donde esta el archivo pom.xml.
 
+Ejemplo en linux:
+```bash
+$ls -l
+  LICENSE
+  pom.xml
+  README.md
+  src
+``` 
+
+Y ejecutar el siguiente comando:
 ```bash 
 $ mvn clean install
 
 ``` 
-La ejecucion de comandos anterior puede  tardar algunos minutos (si es necesario descargar las dependencias).
 
+La ejecucion del comando anterior puede tardar algunos minutos (si es necesario descargar las dependencias). Las dependencias son:
+ - junit
+ - org.mockito
+ - slf4j
+ 
 ### Resultado esperado (test unit)
 
 Las pruebas unitarias tardan aproximadamente 30 segundos dependiendo la cantidad de procesaodres y memoria. 
 1. test01: La primera prueba envia 10 hilos y se evalúa que sean atendidos primero por los 6 operadores luego por los tres supervisores y un director.
 2. test02: La segunda prueba envia 10 hilos en paralelo y el resultado esperado es que se crean la 10 llamadas al tiempo con una duración cercana a los 10 segundos.
-3. test03 En la última prueba se envian 22 hilos en paralelo y se evalua que sean creadas 22 llamadas.
+3. test03 En esta prueba se envian 22 hilos en paralelo y se valida que sean creadas 22 llamadas.
+4. test04 En la última prueba se envian 2 hilos uno detrás del otro y se evaláa que sean creadas 2 llamadas.
 
 ***NOTA: La cantidad de agentes del callcenter es configurable. El tamaño del pool también. Las pruebas estan con un pool de 10 hilos.***
 
+Ejemplo del resultado esperado:
 ```bash 
 -------------------------------------------------------
  T E S T S
@@ -96,7 +112,7 @@ Start call Operator_3 -> Caller_10
 
 Results :
 
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 39.675 sec - in callce...
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 39.675 sec - in callce...
 
 
 ....
