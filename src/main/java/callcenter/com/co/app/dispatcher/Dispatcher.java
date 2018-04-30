@@ -131,7 +131,7 @@ public class Dispatcher {
 
 		} finally {
 			// The process has finished
-			this.running = ! queueCallers.isEmpty();
+			this.running = false;
 			lock.unlock();
 		}
 	}
