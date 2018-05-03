@@ -93,7 +93,7 @@ La ejecucion del comando anterior puede tardar algunos minutos (si es necesario 
 
 Las pruebas unitarias tardan aproximadamente 30 segundos dependiendo la cantidad de procesaodres y memoria. 
 1. test01: La primera prueba envia 10 hilos y se evalúa que sean atendidos primero por los 6 operadores luego por los tres supervisores y un director.
-2. test02: La segunda prueba envia 10 hilos en paralelo y el resultado esperado es que se crean la 10 llamadas al tiempo con una duración cercana a los 10 segundos.
+2. test02: La segunda prueba envia 10 hilos en paralelo y el resultado esperado es que se crean 10 llamadas al tiempo con una duración total cercana a los 10 segundos. Cada llamada puede durar entre 5 y 10 segundos cada una.
 3. test03 En esta prueba se envian 22 hilos en paralelo y se valida que sean creadas 22 llamadas.
 4. test04 En la última prueba se envian 2 hilos uno detrás del otro y se evalúa que sean creadas 2 llamadas.
 
