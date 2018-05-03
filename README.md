@@ -140,9 +140,9 @@ La clase **AttendingCall** extiende de **Call** y es la entidad que ejecuta la l
 
 En la clase **Dispatcher** está la lógica de negocio que implementa el método **dispatchCall**  y el bucle **loopCallCenter**.
 
-El método **dispatchCall**: Encolar las solicitudes de los emisores **Callers** 
+El método **dispatchCall**: Encolar las solicitudes de los emisores **Callers** .
 
-El método **loopCallCenter**: Lee de la cola, asignar a un agente Operator, Supervisor, Director o AgentQueue para responder y crea la instancia  **AttendingCall** la cual es ejecutada en un hilo dentro del pool del ExecutorServices.
+El método **loopCallCenter**: Lee de la cola, asigna a un agente Operator, Supervisor, Director o AgentQueue para responder y crea la instancia  **AttendingCall** la cual es ejecutada en un hilo dentro del pool del ExecutorServices.
 
 
 ![https://github.com/sumelio/CallCenterApp/blob/master/src/resources/img/clases.png](https://github.com/sumelio/CallCenterApp/blob/master/src/resources/img/clases.png)
