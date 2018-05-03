@@ -138,7 +138,7 @@ La clase **Caller** implementa a la interfaz **Sender**, también es hija de **P
 
 La clase **AttendingCall** extiende de **Call** y es la entidad que ejecuta la llamada, para poder crear una instancia de esta, se necesita un Agente (**Agent**) disponible y la persona que realiza la solicitud de llamada (**Caller**).
 
-En la clase **Dispatcher** está la lógica de negocio que implementa el bucle (loopCallCenter), permite encolar las solicitudes de los emisores **Callers** por medio del método *dispatchCall*, leé de la cola, asigna a un agente para responder y este crea la instancia  **AttendingCall** para ser ejecutada en hilo dentro del pool (ExecutorServices).
+En la clase **Dispatcher** está la lógica de negocio que implementa el bucle (loopCallCenter),el cual realizá las siguientes tareas: Encolar las solicitudes de los emisores **Callers** por medio del método *dispatchCall*, leer de la cola, asignar a un agente Operator, Supervisor, Director o AgentQueue para responder y crea la instancia  **AttendingCall** para poder ejecutar un hilo dentro del pool del ExecutorServices.
 
 
 ![https://github.com/sumelio/CallCenterApp/blob/master/src/resources/img/clases.png](https://github.com/sumelio/CallCenterApp/blob/master/src/resources/img/clases.png)
